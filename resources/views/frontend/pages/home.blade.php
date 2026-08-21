@@ -11,13 +11,14 @@
     </div>
     <div class="sf-hero__content sf-hero__content--luxury">
         <p class="sf-eyebrow reveal">Bespoke Cabinetry &amp; Joinery</p>
-        <h1 class="sf-brand sf-brand--luxury reveal">Designed to inspire.<br>Built to last.</h1>
+        <h1 class="sf-brand sf-brand--luxury reveal">Designed to inspire.<br><em>Built to last.</em></h1>
         <p class="sf-hero__lead reveal">Premium custom cabinetry and architectural joinery for Melbourne's exceptional homes and spaces.</p>
         <div class="sf-hero__actions reveal">
             <a href="{{ route('projects') }}" class="sf-btn sf-btn--champagne">View Our Projects</a>
             <a href="{{ route('contact') }}" class="sf-btn sf-btn--outline">Book a Consultation</a>
         </div>
     </div>
+    <p class="sf-scroll-cue reveal">Scroll to discover</p>
 </section>
 
 {{-- TRUST STRIP --}}
@@ -25,24 +26,39 @@
     <div class="container">
         <div class="sf-trust__grid">
             <div class="sf-trust__item reveal">
+                <span class="sf-trust__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="14" width="32" height="22" rx="1"/><path d="M8 22h32M20 14v22"/></svg>
+                </span>
                 <h3>Bespoke Design</h3>
-                <p>Custom solutions tailored to your project, space and vision.</p>
+                <p>Custom solutions tailored to the project.</p>
             </div>
             <div class="sf-trust__item reveal">
+                <span class="sf-trust__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 8l14 8v16L24 40 10 32V16z"/><path d="M24 16v24M10 16l14 8 14-8"/></svg>
+                </span>
                 <h3>Premium Materials</h3>
-                <p>Quality board, stone, hardware and finishes selected with care.</p>
+                <p>Quality board, stone, hardware and finishes.</p>
             </div>
             <div class="sf-trust__item reveal">
+                <span class="sf-trust__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="24" cy="24" r="14"/><path d="M24 16v8l6 4"/></svg>
+                </span>
                 <h3>Precision Crafted</h3>
-                <p>Advanced machinery combined with skilled craftsmanship.</p>
+                <p>Advanced machinery plus skilled craftsmanship.</p>
             </div>
             <div class="sf-trust__item reveal">
+                <span class="sf-trust__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 34V14h24v20"/><path d="M8 34h32M18 22h12M18 28h8"/></svg>
+                </span>
                 <h3>End-to-End Service</h3>
-                <p>Documentation, manufacture and installation under one roof.</p>
+                <p>Documentation, manufacture and installation.</p>
             </div>
             <div class="sf-trust__item reveal">
+                <span class="sf-trust__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="18" cy="18" r="5"/><circle cx="30" cy="18" r="5"/><path d="M10 34c1.5-6 5-9 8-9s6.5 3 8 9M22 34c1.5-6 5-9 8-9s6.5 3 8 9"/></svg>
+                </span>
                 <h3>Trusted Partner</h3>
-                <p>Collaboration with builders, architects and designers.</p>
+                <p>Builder, architect and designer collaboration.</p>
             </div>
         </div>
     </div>
@@ -51,13 +67,16 @@
 {{-- FEATURED PROJECTS --}}
 <section class="sf-section sf-gallery sf-section--dark" id="projects">
     <div class="container">
-        <div class="sf-section__head reveal">
-            <p class="sf-eyebrow">Selected Work</p>
-            <h2>Featured Projects</h2>
+        <div class="sf-section__head sf-section__head--split reveal">
+            <div>
+                <p class="sf-eyebrow">Featured Projects</p>
+                <h2>Exceptional spaces.<br>Thoughtfully crafted.</h2>
+            </div>
+            <a href="{{ route('projects') }}" class="sf-link">View All Projects</a>
         </div>
         @if(isset($projects) && count($projects))
-            <div class="sf-projects-featured">
-                @foreach($projects->take(4) as $project)
+            <div class="sf-projects-featured sf-projects-featured--three">
+                @foreach($projects->take(3) as $project)
                     <a href="{{ route('projectDetails', $project->url) }}" class="sf-project-editorial reveal">
                         <div class="sf-project-editorial__img">
                             <img src="{!! asset($project->image) !!}" alt="{{ $project->title }}" loading="lazy">
@@ -70,9 +89,6 @@
                 @endforeach
             </div>
         @endif
-        <div class="text-center reveal" style="margin-top: 3rem;">
-            <a href="{{ route('projects') }}" class="sf-btn sf-btn--outline">View All Projects</a>
-        </div>
     </div>
 </section>
 
@@ -82,31 +98,18 @@
         <div class="sf-section__head reveal">
             <p class="sf-eyebrow">How We Work</p>
             <h2>Our Process</h2>
+            <p class="sf-section__sub">A clear, structured process from consultation to handover.</p>
         </div>
-        <div class="sf-steps sf-steps--luxury">
-            <article class="sf-step reveal">
-                <span class="sf-step__num">01</span>
-                <h3>Consultation</h3>
-                <p>We understand scope, plans, style, budget and timing — on site or from your documentation.</p>
-            </article>
-            <article class="sf-step reveal">
-                <span class="sf-step__num">02</span>
-                <h3>Design &amp; Documentation</h3>
-                <p>Concepts, material selections, shop drawings and approvals before manufacture begins.</p>
-            </article>
-            <article class="sf-step reveal">
-                <span class="sf-step__num">03</span>
-                <h3>Manufacture</h3>
-                <p>Precision production in our Melbourne facility with quality checks at every stage.</p>
-            </article>
-            <article class="sf-step reveal">
-                <span class="sf-step__num">04</span>
-                <h3>Installation</h3>
-                <p>Coordinated installation, finishing and final inspection — delivered with care.</p>
-            </article>
+        <div id="processSlider" class="owl-carousel owl-theme sf-steps-carousel">
+            @include('frontend.partials.process_steps')
         </div>
-        <div class="text-center reveal" style="margin-top: 2.5rem;">
-            <a href="{{ route('our-process') }}" class="sf-link">Learn more about our process</a>
+        <div class="sf-process__cta reveal">
+            <h3>Start Your Project Today</h3>
+            <p>Discuss your cabinetry with our team — no obligation, no pressure.</p>
+            <div class="sf-hero__actions" style="justify-content: center;">
+                <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Request a Quote</a>
+                <a href="tel:0434991936" class="sf-btn sf-btn--outline">Call 0434 991 936</a>
+            </div>
         </div>
     </div>
 </section>
@@ -122,7 +125,7 @@
             <h2>Local expertise.<br>Uncompromising quality.</h2>
             <p>Smart Fit Cabinets designs and manufactures bespoke joinery locally — combining architectural precision with the warmth of natural timber, stone and refined detailing.</p>
             <p>From documentation through to installation, our team delivers joinery packages builders, architects and homeowners can rely on.</p>
-            <a href="{{ route('about-us') }}" class="sf-btn sf-btn--champagne">About Smart Fit</a>
+            <a href="{{ route('about-us') }}" class="sf-btn sf-btn--outline">About Smart Fit</a>
         </div>
     </div>
 </section>
@@ -132,10 +135,10 @@
     <div class="container sf-partners__inner reveal">
         <div>
             <p class="sf-eyebrow">For Professionals</p>
-            <h2>Builders, architects &amp; interior designers</h2>
-            <p>Accurate documentation, reliable communication, precision manufacturing and professional installation — positioned as your dependable joinery partner.</p>
+            <h2>A cabinetry partner you can rely on.</h2>
+            <p>Accurate documentation, reliable communication, precision manufacturing and professional installation — for builders, architects and interior designers.</p>
         </div>
-        <a href="{{ route('builders-architects') }}" class="sf-btn sf-btn--outline">Work With Us</a>
+        <a href="{{ route('builders-architects') }}" class="sf-btn sf-btn--champagne">Work With Us</a>
     </div>
 </section>
 

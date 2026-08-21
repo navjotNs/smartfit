@@ -20,21 +20,21 @@ html.lenis {
   scroll-behavior: auto !important;
 }
 
-body.content-pages.get-started,
-body.content-pages.home,
-body.content-pages.services,
-body.content-pages.projects,
-body.content-pages.about-us {
+body.content-pages.get-started:not(.sf-dark),
+body.content-pages.home:not(.sf-dark),
+body.content-pages.services:not(.sf-dark),
+body.content-pages.projects:not(.sf-dark),
+body.content-pages.about-us:not(.sf-dark) {
   background: var(--sf-paper);
   color: var(--sf-ink);
   overflow-x: hidden;
 }
 
-body.content-pages.get-started p,
-body.content-pages.home p,
-body.content-pages.services p,
-body.content-pages.projects p,
-body.content-pages.about-us p {
+body.content-pages.get-started:not(.sf-dark) p,
+body.content-pages.home:not(.sf-dark) p,
+body.content-pages.services:not(.sf-dark) p,
+body.content-pages.projects:not(.sf-dark) p,
+body.content-pages.about-us:not(.sf-dark) p {
   color: var(--sf-muted);
   font-family: "Manrope", sans-serif;
   font-size: 1.05rem;
@@ -54,7 +54,7 @@ body.content-pages.about-us p {
   transition: background 0.35s var(--sf-ease), box-shadow 0.35s var(--sf-ease), padding 0.35s var(--sf-ease);
 }
 
-.sf-header.is-scrolled {
+body:not(.sf-dark) .sf-header.is-scrolled {
   background: rgba(246, 246, 244, 0.92) !important;
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--sf-line);
@@ -84,7 +84,7 @@ body.content-pages.about-us p {
   font-size: 13px !important;
 }
 
-.sf-nav-links li a {
+body:not(.sf-dark) .sf-nav-links li a {
   color: var(--sf-ink) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.12em;
@@ -93,7 +93,7 @@ body.content-pages.about-us p {
   transition: color 0.25s ease;
 }
 
-.sf-nav-links li a:hover {
+body:not(.sf-dark) .sf-nav-links li a:hover {
   color: var(--sf-wood) !important;
   background: transparent !important;
 }
@@ -106,7 +106,7 @@ body.content-pages.about-us p {
   white-space: nowrap;
 }
 
-.sf-header-cta {
+body:not(.sf-dark) .sf-header-cta {
   display: inline-block;
   background: var(--sf-wood);
   color: #fff !important;
@@ -119,7 +119,7 @@ body.content-pages.about-us p {
   transition: background 0.25s ease, transform 0.25s ease;
 }
 
-.sf-header-cta:hover {
+body:not(.sf-dark) .sf-header-cta:hover {
   background: var(--sf-wood-deep);
   color: #fff !important;
   transform: translateY(-1px);
@@ -729,7 +729,7 @@ body.content-pages.about-us p {
 }
 
 /* Process */
-.sf-process {
+body:not(.sf-dark) .sf-process {
   background: #fff;
 }
 

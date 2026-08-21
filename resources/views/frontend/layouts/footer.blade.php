@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row sf-footer__grid">
             <div class="col-lg-3 col-md-6">
-                <a href="/" class="sf-footer__brand">Smart Fit<br><span>Cabinets</span></a>
+                <a href="/" class="sf-footer__brand">SMART FIT<br><span>CABINETS</span></a>
                 <p>Premium custom cabinetry and architectural joinery for Melbourne's exceptional homes and spaces.</p>
                 <div class="footer-logo">
                     <a href="/"><img src="{!! asset('assets/frontend/images/logo.png') !!}" class="img-fluid logo" alt="Smart Fit Cabinets"></a>
@@ -20,6 +20,17 @@
                 </ul>
             </div>
             <div class="col-lg-2 col-md-6">
+                <h4>Services</h4>
+                <ul class="sf-footer-links">
+                    <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
+                    <li><a href="{{ route('joinery') }}">Wardrobes</a></li>
+                    <li><a href="{{ route('joinery') }}">Vanities</a></li>
+                    <li><a href="{{ route('joinery') }}">Laundries</a></li>
+                    <li><a href="{{ route('joinery') }}">Entertainment Units</a></li>
+                    <li><a href="{{ route('joinery') }}">Architectural Joinery</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
                 <h4>Information</h4>
                 <ul class="sf-footer-links">
                     <li><a href="{{ route('contact') }}">Contact</a></li>
@@ -34,7 +45,7 @@
                 </ul>
                 @endif
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-3 col-md-6">
                 <h4>Contact</h4>
                 <div class="ovr-txt sf-footer__contact">
                     <p><strong>Address</strong><br>Unit 5/483B Dohertys Road, Truganina, VIC 3029, Australia</p>

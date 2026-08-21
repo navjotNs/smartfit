@@ -11,7 +11,7 @@
                 <li><a href="{{ route('projects') }}">PROJECTS</a></li>
                 <li><a href="{{ route('kitchens') }}">KITCHENS</a></li>
                 <li><a href="{{ route('joinery') }}">JOINERY</a></li>
-                <li><a href="{{ route('builders-architects') }}">BUILDERS</a></li>
+                <li><a href="{{ route('builders-architects') }}">BUILDERS &amp; ARCHITECTS</a></li>
                 <li><a href="{{ route('about-us') }}">ABOUT</a></li>
                 <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 <li><a href="{{ route('contact') }}" class="sf-nav-cta">REQUEST A QUOTE</a></li>
@@ -20,7 +20,7 @@
         <div class="row deskMenu align-items-center">
             <div class="col-md-3 logodiv">
                 <a href="/" class="sf-logo sf-logo--desktop">
-                    <span class="sf-logo__text">Smart Fit<br><em>Cabinets</em></span>
+                    <span class="sf-logo__text">SMART FIT<br>CABINETS</span>
                 </a>
             </div>
             <div class="col-md-9 sf-nav-right">
@@ -28,7 +28,7 @@
                     <li><a href="{{ route('projects') }}">PROJECTS</a></li>
                     <li><a href="{{ route('kitchens') }}">KITCHENS</a></li>
                     <li><a href="{{ route('joinery') }}">JOINERY</a></li>
-                    <li><a href="{{ route('builders-architects') }}">BUILDERS</a></li>
+                    <li><a href="{{ route('builders-architects') }}">BUILDERS<span class="sf-nav-extra"> &amp; ARCHITECTS</span></a></li>
                     <li><a href="{{ route('about-us') }}">ABOUT</a></li>
                     <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 </ul>

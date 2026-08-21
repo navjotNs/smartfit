@@ -317,6 +317,22 @@ $(document).ready(function(){
     });
 // SLIDER 1 JS ENDS
 
+    if ($('#processSlider').length) {
+        $('#processSlider').owlCarousel({
+            loop: true,
+            margin: 22,
+            nav: false,
+            dots: true,
+            autoplay: false,
+            smartSpeed: 600,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                1200: { items: 3 }
+            }
+        });
+    }
+
 // HOME SERVICES CAROUSEL
     if ($('#slider_services').length) {
         $('#slider_services').owlCarousel({
