@@ -8,13 +8,13 @@
                 <img src="{!! asset('assets/frontend/images/logo.png') !!}" alt="Smart Fit Cabinets">
             </a>
             <ul>
-                <li><a href="{{ route('projects') }}">Projects</a></li>
-                <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
-                <li><a href="{{ route('joinery') }}">Joinery</a></li>
-                <li><a href="{{ route('builders-architects') }}">Builders</a></li>
-                <li><a href="{{ route('about-us') }}">About</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
-                <li><a href="{{ route('contact') }}" class="sf-nav-cta">Request a Quote</a></li>
+                <li><a href="{{ route('projects') }}">PROJECTS</a></li>
+                <li><a href="{{ route('kitchens') }}">KITCHENS</a></li>
+                <li><a href="{{ route('joinery') }}">JOINERY</a></li>
+                <li><a href="{{ route('builders-architects') }}">BUILDERS</a></li>
+                <li><a href="{{ route('about-us') }}">ABOUT</a></li>
+                <li><a href="{{ route('contact') }}">CONTACT</a></li>
+                <li><a href="{{ route('contact') }}" class="sf-nav-cta">REQUEST A QUOTE</a></li>
             </ul>
         </div>
         <div class="row deskMenu align-items-center">
@@ -25,14 +25,14 @@
             </div>
             <div class="col-md-9 sf-nav-right">
                 <ul class="sf-nav-links">
-                    <li><a href="{{ route('projects') }}">Projects</a></li>
-                    <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
-                    <li><a href="{{ route('joinery') }}">Joinery</a></li>
-                    <li><a href="{{ route('builders-architects') }}">Builders</a></li>
-                    <li><a href="{{ route('about-us') }}">About</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a href="{{ route('projects') }}">PROJECTS</a></li>
+                    <li><a href="{{ route('kitchens') }}">KITCHENS</a></li>
+                    <li><a href="{{ route('joinery') }}">JOINERY</a></li>
+                    <li><a href="{{ route('builders-architects') }}">BUILDERS</a></li>
+                    <li><a href="{{ route('about-us') }}">ABOUT</a></li>
+                    <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 </ul>
-                <a href="{{ route('contact') }}" class="sf-header-cta">Request a Quote</a>
+                <a href="{{ route('contact') }}" class="sf-header-cta">REQUEST A QUOTE</a>
             </div>
         </div>
     </div>

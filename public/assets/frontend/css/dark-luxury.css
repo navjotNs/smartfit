@@ -1399,3 +1399,11 @@ body.sf-dark .sf-nav-right {
     animation: none;
   }
 }
+
+body.sf-dark .sf-header .sf-nav-links > li > a,
+body.sf-dark .sf-header #main-nav ul > li > a,
+body.sf-dark .sf-header-cta,
+body.sf-dark .sf-nav-cta {
+  text-transform: uppercase !important;
+  letter-spacing: 0.14em !important;
+}
