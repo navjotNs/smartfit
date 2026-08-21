@@ -70,14 +70,18 @@ body.content-pages.about-us p {
 }
 
 .sf-nav-links {
-  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
   margin: 0 !important;
-  padding: 12px 0 !important;
+  padding: 8px 0 !important;
+  white-space: nowrap;
 }
 
 .sf-nav-links li {
-  padding: 4px 18px !important;
-  font-size: 15px !important;
+  padding: 4px 10px !important;
+  font-size: 13px !important;
 }
 
 .sf-nav-links li a {

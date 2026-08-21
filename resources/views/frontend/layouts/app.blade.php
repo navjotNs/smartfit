@@ -372,7 +372,7 @@ $(document).ready(function(){
 
 jQuery('#main-nav').stellarNav({
         theme     : 'plain', 
-        breakpoint: 991, 
+        breakpoint: 1199, 
         //menuLabel: '<a href="/"><img src="/assets/frontend/images/logo.png"></a>',  
         phoneBtn: false, 
         locationBtn: false, 

@@ -11,7 +11,7 @@
                 <li><a href="{{ route('projects') }}">Projects</a></li>
                 <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
                 <li><a href="{{ route('joinery') }}">Joinery</a></li>
-                <li><a href="{{ route('builders-architects') }}">Builders &amp; Architects</a></li>
+                <li><a href="{{ route('builders-architects') }}">Builders</a></li>
                 <li><a href="{{ route('about-us') }}">About</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 <li><a href="{{ route('contact') }}" class="sf-nav-cta">Request a Quote</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="{{ route('projects') }}">Projects</a></li>
                     <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
                     <li><a href="{{ route('joinery') }}">Joinery</a></li>
-                    <li><a href="{{ route('builders-architects') }}">Builders &amp; Architects</a></li>
+                    <li><a href="{{ route('builders-architects') }}">Builders</a></li>
                     <li><a href="{{ route('about-us') }}">About</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
