@@ -3,7 +3,7 @@
 
 <section class="sf-page-hero sf-page-hero--luxury">
     <div class="sf-page-hero__media">
-        <img src="{!! asset('uploads/images/750707kitchen-service.jpg') !!}" alt="Smart Fit custom kitchens Melbourne">
+        <img src="{!! asset('assets/frontend/images/hero-kitchen.png') !!}" alt="Smart Fit custom kitchens Melbourne">
         <div class="sf-page-hero__shade"></div>
     </div>
     <div class="sf-page-hero__content">

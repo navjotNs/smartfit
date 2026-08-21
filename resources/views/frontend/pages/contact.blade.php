@@ -3,7 +3,7 @@
 
 <section class="sf-page-hero sf-page-hero--luxury sf-page-hero--contact">
     <div class="sf-page-hero__media">
-        <img src="{!! asset('assets/frontend/images/oth_hdr_contact.webp') !!}" alt="Contact Smart Fit Cabinets">
+        <img src="{!! asset('assets/frontend/images/hero-kitchen.png') !!}" alt="Contact Smart Fit Cabinets">
         <div class="sf-page-hero__shade"></div>
     </div>
     <div class="sf-page-hero__content">

@@ -2,8 +2,13 @@
 @section('content')
 
 @php
-    $heroImage = !empty($galleryImages) ? $galleryImages[0] : $article->image;
-    $storyImages = array_slice($galleryImages, 1);
+    $featuredKitchen = 'assets/frontend/images/hero-kitchen.png';
+    $heroImage = $featuredKitchen;
+    $storyImages = !empty($galleryImages) ? $galleryImages : array();
+    if (isset($article) && $article->url !== 'project-2' && !empty($galleryImages)) {
+        $heroImage = $galleryImages[0];
+        $storyImages = array_slice($galleryImages, 1);
+    }
 @endphp
 
 <article class="sf-proj">

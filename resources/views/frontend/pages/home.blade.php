@@ -4,19 +4,9 @@
 {{-- HERO --}}
 <section class="sf-hero sf-hero--luxury" id="top">
     <div class="sf-hero__media">
-        @if(isset($sliders) && count($sliders))
-            <div id="slider1" class="owl-carousel owl-theme sf-hero__carousel">
-                @foreach($sliders as $slider)
-                    <div class="item">
-                        <img src="{!! asset($slider->image) !!}" alt="Smart Fit Cabinets premium joinery">
-                    </div>
-                @endforeach
-            </div>
-        @else
-            <div class="sf-hero__fallback">
-                <img src="{!! asset('uploads/images/670544kitchen_02.webp') !!}" alt="Smart Fit Cabinets kitchen">
-            </div>
-        @endif
+        <div class="sf-hero__fallback">
+            <img src="{!! asset('assets/frontend/images/hero-kitchen.png') !!}" alt="Smart Fit Cabinets luxury kitchen">
+        </div>
         <div class="sf-hero__shade sf-hero__shade--luxury"></div>
     </div>
     <div class="sf-hero__content sf-hero__content--luxury">
