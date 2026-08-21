@@ -98,12 +98,29 @@ class HomeController extends Controller{
     
     public function projectDetails($url = null){
         try{
-            $article = Project::where('status', 1)->where('url', $url)->select('id', 'title', 'description', 'image', 'meta_description')->first();
+            $article = Project::where('status', 1)->where('url', $url)->select('id', 'title', 'description', 'image', 'meta_description', 'url')->first();
+            if (!$article) {
+                return back();
+            }
             $content = Content::where('id', 1)->first();
             $sliders = Slider::where('status', 1)->where('title', $article->title)->select('image')->get();
-            return view('frontend.pages.project_detail', compact('article', 'content', 'sliders'));
+            $projects = Project::where('status', 1)->select('id', 'title', 'url', 'image')->orderBy('sort_order', 'ASC')->get();
+            $prev = null;
+            $next = null;
+            foreach ($projects as $index => $project) {
+                if ($project->id == $article->id) {
+                    if ($index > 0) {
+                        $prev = $projects[$index - 1];
+                    }
+                    if (isset($projects[$index + 1])) {
+                        $next = $projects[$index + 1];
+                    }
+                    break;
+                }
+            }
+            $related = $projects->where('id', '!=', $article->id)->values()->take(3);
+            return view('frontend.pages.project_detail', compact('article', 'content', 'sliders', 'prev', 'next', 'related'));
         }  catch(\Exception $exception){
-            dd($exception);
             return back();
         }
     }
