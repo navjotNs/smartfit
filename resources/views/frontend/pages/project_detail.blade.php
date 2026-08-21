@@ -2,106 +2,101 @@
 @section('content')
 
 @php
-    $heroImage = (isset($sliders) && count($sliders)) ? $sliders[0]->image : $article->image;
+    $heroImage = !empty($galleryImages) ? $galleryImages[0] : $article->image;
+    $storyImages = array_slice($galleryImages, 1);
 @endphp
 
-<section class="sf-page-hero sf-page-hero--luxury sf-page-hero--project">
-    <div class="sf-page-hero__media">
-        @if(isset($sliders) && count($sliders) > 1)
-            <div id="slider1" class="owl-carousel owl-theme sf-page-hero__carousel">
-                @foreach($sliders as $slider)
-                    <div class="item">
-                        <img src="{!! asset($slider->image) !!}" alt="{{ $article->title }}">
+<article class="sf-proj">
+    <section class="sf-proj-hero">
+        <div class="sf-proj-hero__media">
+            <img src="{!! asset($heroImage) !!}" alt="{{ $article->title }}">
+        </div>
+        <div class="sf-proj-hero__veil"></div>
+        <div class="sf-proj-hero__inner">
+            <a href="{{ route('projects') }}" class="sf-proj-back">All Projects</a>
+            @if($location)
+                <p class="sf-eyebrow">{{ $location }}</p>
+            @else
+                <p class="sf-eyebrow">Selected Project</p>
+            @endif
+            <h1>{{ $shortTitle }}</h1>
+        </div>
+        <span class="sf-proj-hero__scroll"></span>
+    </section>
+
+    @if(!empty($credits) || $location)
+    <section class="sf-proj-credits">
+        <div class="container">
+            <div class="sf-proj-credits__row">
+                @if($location)
+                    <div>
+                        <span>Location</span>
+                        <strong>{{ $location }}</strong>
+                    </div>
+                @endif
+                @foreach($credits as $label => $value)
+                    <div>
+                        <span>{{ $label }}</span>
+                        <strong>{{ $value }}</strong>
                     </div>
                 @endforeach
-            </div>
-        @else
-            <img src="{!! asset($heroImage) !!}" alt="{{ $article->title }}">
-        @endif
-        <div class="sf-page-hero__shade"></div>
-    </div>
-    <div class="sf-page-hero__content">
-        <p class="sf-eyebrow reveal">Project</p>
-        <h1 class="reveal">{{ $article->title }}</h1>
-        @if($article->meta_description)
-            <p class="reveal">{{ $article->meta_description }}</p>
-        @endif
-    </div>
-</section>
-
-<section class="sf-section sf-project-detail">
-    <div class="container">
-        <div class="sf-project-detail__layout">
-            <div class="sf-project-detail__story reveal">
-                <p class="sf-eyebrow">The Brief</p>
-                <div class="sf-project-copy">
-                    {!! $article->description !!}
+                <div>
+                    <span>Joinery</span>
+                    <strong>Smart Fit Cabinets</strong>
                 </div>
             </div>
-            <aside class="sf-project-detail__aside reveal">
-                <div class="sf-project-meta">
-                    <h3>Project</h3>
-                    <p>{{ $article->title }}</p>
-                    <h3>Location</h3>
-                    <p>Melbourne</p>
-                    <h3>Scope</h3>
-                    <p>Custom cabinetry &amp; joinery</p>
-                </div>
-                <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne sf-btn--full">Enquire about a similar project</a>
-            </aside>
         </div>
+    </section>
+    @endif
 
-        @if((isset($sliders) && count($sliders)) || $article->image)
-            <div class="sf-project-gallery">
-                <div class="sf-section__head reveal">
-                    <p class="sf-eyebrow">Gallery</p>
-                    <h2>Project photography</h2>
-                </div>
-                <div class="sf-project-gallery__grid">
-                    @if($article->image)
-                        <a href="{!! asset($article->image) !!}" class="sf-project-gallery__item sf-project-gallery__item--wide reveal">
-                            <img src="{!! asset($article->image) !!}" alt="{{ $article->title }}" loading="lazy">
-                        </a>
-                    @endif
-                    @if(isset($sliders) && count($sliders))
-                        @foreach($sliders as $slider)
-                            <a href="{!! asset($slider->image) !!}" class="sf-project-gallery__item reveal">
-                                <img src="{!! asset($slider->image) !!}" alt="{{ $article->title }} detail" loading="lazy">
-                            </a>
-                        @endforeach
-                    @endif
-                </div>
+    <section class="sf-proj-story">
+        <div class="sf-proj-story__copy reveal">
+            <p class="sf-eyebrow">The Project</p>
+            <div class="sf-project-copy">
+                {!! $article->description !!}
             </div>
-        @endif
+            <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Enquire about a similar project</a>
+        </div>
+    </section>
 
-        <div class="sf-project-pager">
-            @if(!empty($prev))
-                <a href="{{ route('projectDetails', $prev->url) }}" class="sf-project-pager__link">
-                    <span>Previous</span>
+    @if(count($storyImages))
+    <section class="sf-proj-photos">
+        @foreach($storyImages as $i => $photo)
+            <figure class="sf-proj-photo {{ $i === 0 ? 'sf-proj-photo--full' : ($i % 3 === 0 ? 'sf-proj-photo--full' : 'sf-proj-photo--half') }}">
+                <img src="{!! asset($photo) !!}" alt="{{ $article->title }} photography" loading="lazy">
+            </figure>
+        @endforeach
+    </section>
+    @endif
+
+    <nav class="sf-proj-next">
+        @if(!empty($prev))
+            <a href="{{ route('projectDetails', $prev->url) }}" class="sf-proj-next__card">
+                <img src="{!! asset($prev->image) !!}" alt="{{ $prev->title }}">
+                <div>
+                    <span>Previous project</span>
                     <strong>{{ $prev->title }}</strong>
-                </a>
-            @else
-                <span></span>
-            @endif
-            <a href="{{ route('projects') }}" class="sf-btn sf-btn--outline">All Projects</a>
-            @if(!empty($next))
-                <a href="{{ route('projectDetails', $next->url) }}" class="sf-project-pager__link sf-project-pager__link--next">
-                    <span>Next</span>
+                </div>
+            </a>
+        @endif
+        @if(!empty($next))
+            <a href="{{ route('projectDetails', $next->url) }}" class="sf-proj-next__card sf-proj-next__card--next">
+                <img src="{!! asset($next->image) !!}" alt="{{ $next->title }}">
+                <div>
+                    <span>Next project</span>
                     <strong>{{ $next->title }}</strong>
-                </a>
-            @else
-                <span></span>
-            @endif
-        </div>
-    </div>
-</section>
+                </div>
+            </a>
+        @endif
+    </nav>
+</article>
 
 @if(isset($related) && count($related))
 <section class="sf-section sf-section--graphite">
     <div class="container">
         <div class="sf-section__head reveal">
-            <p class="sf-eyebrow">More Work</p>
-            <h2>Related projects</h2>
+            <p class="sf-eyebrow">Continue exploring</p>
+            <h2>More projects</h2>
         </div>
         <div class="sf-projects-featured sf-projects-featured--three">
             @foreach($related as $project)
@@ -119,12 +114,5 @@
     </div>
 </section>
 @endif
-
-<section class="sf-section sf-contact--band reveal">
-    <div class="container text-center">
-        <h2>Enquire about a similar project</h2>
-        <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Book a Consultation</a>
-    </div>
-</section>
 
 @endsection

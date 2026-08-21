@@ -119,7 +119,37 @@ class HomeController extends Controller{
                 }
             }
             $related = $projects->where('id', '!=', $article->id)->values()->take(3);
-            return view('frontend.pages.project_detail', compact('article', 'content', 'sliders', 'prev', 'next', 'related'));
+
+            $shortTitle = $article->title;
+            $location = '';
+            if (strpos($article->title, ' - ') !== false) {
+                $parts = explode(' - ', $article->title);
+                $location = trim(array_pop($parts));
+                $shortTitle = trim(implode(' - ', $parts));
+            }
+
+            $plain = html_entity_decode(strip_tags(str_replace(array('<br>', '<br/>', '<br />', '</p>'), "\n", $article->description)));
+            $credits = array();
+            foreach (array('Architect', 'Builder', 'Photographer') as $label) {
+                if (preg_match('/'.$label.'\s*:\s*(.+)/i', $plain, $match)) {
+                    $credits[$label] = trim($match[1]);
+                }
+            }
+
+            $galleryImages = array();
+            if (!empty($article->image)) {
+                $galleryImages[] = $article->image;
+            }
+            foreach ($sliders as $slider) {
+                if (!empty($slider->image) && !in_array($slider->image, $galleryImages)) {
+                    $galleryImages[] = $slider->image;
+                }
+            }
+
+            return view('frontend.pages.project_detail', compact(
+                'article', 'content', 'sliders', 'prev', 'next', 'related',
+                'shortTitle', 'location', 'credits', 'galleryImages'
+            ));
         }  catch(\Exception $exception){
             return back();
         }
