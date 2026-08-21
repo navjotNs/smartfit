@@ -146,9 +146,18 @@ class HomeController extends Controller{
                 }
             }
 
+            $storyHtml = $article->description;
+            $storyHtml = preg_replace('/\sstyle=("|\')[^"\']*("|\')/i', '', $storyHtml);
+            $storyHtml = preg_replace('/\scolor=("|\')[^"\']*("|\')/i', '', $storyHtml);
+            $storyHtml = preg_replace('/<\/?font[^>]*>/i', '', $storyHtml);
+            $storyHtml = preg_replace('/<h[1-6][^>]*>\s*Project Credits.*?<\/h[1-6]>/is', '', $storyHtml);
+            $storyHtml = preg_replace('/<(p|div|li|h[1-6]|span)[^>]*>\s*(Architect|Builder|Photographer)\s*:.*?<\/\1>/is', '', $storyHtml);
+            $storyHtml = preg_replace('/(Architect|Builder|Photographer)\s*:\s*[^<\n]+/i', '', $storyHtml);
+            $storyHtml = preg_replace('/<(p|div)[^>]*>\s*(<br\s*\/?>|\s)*<\/\1>/i', '', $storyHtml);
+
             return view('frontend.pages.project_detail', compact(
                 'article', 'content', 'sliders', 'prev', 'next', 'related',
-                'shortTitle', 'location', 'credits', 'galleryImages'
+                'shortTitle', 'location', 'credits', 'galleryImages', 'storyHtml'
             ));
         }  catch(\Exception $exception){
             return back();

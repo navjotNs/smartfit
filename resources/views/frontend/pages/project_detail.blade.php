@@ -53,7 +53,7 @@
         <div class="sf-proj-story__copy reveal">
             <p class="sf-eyebrow">The Project</p>
             <div class="sf-project-copy">
-                {!! $article->description !!}
+                {!! $storyHtml !!}
             </div>
             <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Enquire about a similar project</a>
         </div>
@@ -79,7 +79,7 @@
                 </div>
             </a>
         @endif
-        @if(!empty($next))
+            @if(!empty($next))
             <a href="{{ route('projectDetails', $next->url) }}" class="sf-proj-next__card sf-proj-next__card--next">
                 <img src="{!! asset($next->image) !!}" alt="{{ $next->title }}">
                 <div>
@@ -87,8 +87,8 @@
                     <strong>{{ $next->title }}</strong>
                 </div>
             </a>
-        @endif
-    </nav>
+            @endif
+        </nav>
 </article>
 
 @if(isset($related) && count($related))
