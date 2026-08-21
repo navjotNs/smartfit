@@ -80,14 +80,14 @@ body.content-pages.about-us p {
 }
 
 .sf-nav-links li {
-  padding: 4px 10px !important;
+  padding: 4px 16px !important;
   font-size: 13px !important;
 }
 
 .sf-nav-links li a {
   color: var(--sf-ink) !important;
-  text-transform: none !important;
-  letter-spacing: 0.02em;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   transition: color 0.25s ease;

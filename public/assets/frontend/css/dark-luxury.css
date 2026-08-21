@@ -94,12 +94,12 @@ body.sf-dark h4 {
 
 .sf-nav-links li a {
   color: var(--sf-ivory) !important;
-  text-transform: none !important;
+  text-transform: uppercase !important;
   font-family: var(--sf-sans) !important;
-  font-size: 0.82rem !important;
+  font-size: 0.78rem !important;
   font-weight: 500 !important;
-  letter-spacing: 0.04em !important;
-  padding: 4px 14px !important;
+  letter-spacing: 0.12em !important;
+  padding: 4px 18px !important;
   transition: color 0.25s ease;
 }
 
@@ -132,7 +132,7 @@ body.sf-dark h4 {
 }
 
 header ul li {
-  padding: 4px 12px !important;
+  padding: 4px 18px !important;
 }
 
 /* Buttons */
@@ -735,6 +735,8 @@ body.sf-dark footer {
 #main-nav li a {
   color: var(--sf-ivory) !important;
   font-family: var(--sf-sans);
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em;
 }
 
 .stellarnav .menu-toggle span.bars {
@@ -967,12 +969,14 @@ body.sf-dark .sf-gallery {
 
 /* Compact header so About + Contact stay last and visible */
 body.sf-dark .sf-nav-links li a {
-  font-size: 0.78rem !important;
-  padding: 4px 8px !important;
+  font-size: 0.74rem !important;
+  padding: 4px 16px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
 }
 
 body.sf-dark header ul li {
-  padding: 4px 6px !important;
+  padding: 4px 14px !important;
 }
 
 body.sf-dark .sf-header-cta {
@@ -1020,8 +1024,8 @@ body.sf-dark .sf-nav-right {
     display: block;
     padding: 14px 4px !important;
     font-size: 1rem !important;
-    letter-spacing: 0.06em;
-    text-transform: none !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase !important;
   }
   body.sf-dark .stellarnav.mobile li a.sf-nav-cta {
     margin-top: 16px;
