@@ -60,7 +60,6 @@ body:not(.sf-dark) .sf-header.is-scrolled {
   box-shadow: 0 1px 0 var(--sf-line);
   padding: 6px 0 !important;
 }
-
 .sf-nav-right {
   display: flex;
   align-items: center;
