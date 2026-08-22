@@ -1154,7 +1154,7 @@ body.sf-dark .sf-nav-right {
   }
   body.sf-dark .stellarnav.mobile > ul {
     position: fixed !important;
-    top: 64px;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1166,7 +1166,7 @@ body.sf-dark .sf-nav-right {
     padding: 4px 22px 36px !important;
     margin: 0 !important;
     overflow-y: auto;
-    z-index: 10065;
+    z-index: 99999 !important;
   }
   body.sf-dark .stellarnav.mobile li {
     display: block !important;
