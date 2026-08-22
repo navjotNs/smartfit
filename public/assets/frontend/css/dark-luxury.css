@@ -75,7 +75,6 @@ body.sf-dark h4 {
 
 .sf-header.is-scrolled {
   background: rgba(17, 17, 17, 0.92) !important;
-  /* backdrop-filter: blur(14px); */
   border-bottom-color: var(--sf-line);
   padding: 10px 0 !important;
 }
