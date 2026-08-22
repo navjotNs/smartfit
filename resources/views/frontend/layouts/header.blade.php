@@ -39,7 +39,6 @@
                     <li><a href="{{ route('about-us') }}">ABOUT</a></li>
                     <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 </ul>
-                
                 <a href="{{ route('contact') }}" class="sf-header-cta">REQUEST A QUOTE</a>
             </div>
         </div>
