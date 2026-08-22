@@ -65,7 +65,7 @@
 </section>
 
 {{-- FEATURED PROJECTS --}}
-<section class="sf-section sf-gallery sf-section--dark" id="projects">
+<!-- <section class="sf-section sf-gallery sf-section--dark" id="projects">
     <div class="container">
         <div class="sf-section__head sf-section__head--split reveal">
             <div>
@@ -90,19 +90,19 @@
             </div>
         @endif
     </div>
-</section>
+</section> -->
 
 {{-- PROCESS --}}
 <section class="sf-section sf-process sf-section--graphite" id="process">
     <div class="container">
-        <div class="sf-section__head reveal">
+        <!--  <div class="sf-section__head reveal">
             <p class="sf-eyebrow">How We Work</p>
             <h2>Our Process</h2>
             <p class="sf-section__sub">A clear, structured process from consultation to handover.</p>
         </div>
         <div id="processSlider" class="owl-carousel owl-theme sf-steps-carousel">
             @include('frontend.partials.process_steps')
-        </div>
+        </div> -->
         <div class="sf-process__cta reveal">
             <h3>Start Your Project Today</h3>
             <p>Discuss your cabinetry with our team — no obligation, no pressure.</p>

@@ -75,7 +75,7 @@ body.sf-dark h4 {
 
 .sf-header.is-scrolled {
   background: rgba(17, 17, 17, 0.92) !important;
-  backdrop-filter: blur(14px);
+  /* backdrop-filter: blur(14px); */
   border-bottom-color: var(--sf-line);
   padding: 10px 0 !important;
 }
@@ -1154,26 +1154,90 @@ body.sf-dark .sf-nav-right {
     background: transparent !important;
   }
   body.sf-dark .stellarnav.mobile > ul {
-    background: rgba(17, 17, 17, 0.98) !important;
+    position: fixed !important;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    max-width: none !important;
+    height: calc(100dvh - 64px) !important;
+    background: #111111 !important;
     border-top: 1px solid var(--sf-line);
-    padding: 16px 18px 28px;
+    padding: 4px 22px 36px !important;
+    margin: 0 !important;
+    overflow-y: auto;
+    z-index: 10065;
   }
   body.sf-dark .stellarnav.mobile li {
     display: block !important;
+    float: none !important;
+    width: 100% !important;
     padding: 0 !important;
-    border-bottom: 1px solid var(--sf-line);
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(242, 238, 230, 0.12);
   }
-  body.sf-dark .stellarnav.mobile li a {
+  body.sf-dark .stellarnav.mobile > ul > li > a {
     display: block;
-    padding: 14px 4px !important;
-    font-size: 1rem !important;
-    letter-spacing: 0.12em;
+    padding: 18px 0 !important;
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.16em !important;
     text-transform: uppercase !important;
+    color: #f2eee6 !important;
+    background: transparent !important;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+  }
+  body.sf-dark .stellarnav.mobile > ul > li > a:hover,
+  body.sf-dark .stellarnav.mobile > ul > li > a:focus,
+  body.sf-dark .stellarnav.mobile > ul > li > a:active {
+    color: var(--sf-champagne) !important;
+    background: transparent !important;
+    padding-left: 10px !important;
+  }
+  body.sf-dark .stellarnav.mobile li.sf-mobile-meta {
+    border-bottom: 0 !important;
+    padding-top: 28px !important;
+  }
+  body.sf-dark .stellarnav.mobile .sf-mobile-contact a {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0 !important;
+    font-size: 0.88rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.02em !important;
+    text-transform: none !important;
+    color: rgba(242, 238, 230, 0.58) !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+  body.sf-dark .stellarnav.mobile .sf-mobile-contact a i {
+    width: 16px;
+    color: var(--sf-champagne);
+    text-align: center;
+  }
+  body.sf-dark .stellarnav.mobile .sf-mobile-contact a:hover,
+  body.sf-dark .stellarnav.mobile .sf-mobile-contact a:active {
+    color: var(--sf-ivory) !important;
+    padding-left: 0 !important;
   }
   body.sf-dark .stellarnav.mobile li a.sf-nav-cta {
-    margin-top: 16px;
+    display: block;
+    margin-top: 22px;
+    padding: 16px 18px !important;
     text-align: center;
-    border: 1px solid var(--sf-champagne);
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase !important;
+    background: var(--sf-champagne) !important;
+    color: #111 !important;
+    border: 0 !important;
+  }
+  body.sf-dark .stellarnav.mobile li a.sf-nav-cta:hover,
+  body.sf-dark .stellarnav.mobile li a.sf-nav-cta:active {
+    background: var(--sf-champagne-hover) !important;
+    color: #111 !important;
+    padding-left: 18px !important;
   }
   body.sf-dark .sf-header,
   body.sf-dark .sf-header.is-scrolled {
