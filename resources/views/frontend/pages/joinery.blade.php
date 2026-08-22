@@ -18,36 +18,36 @@
         <div class="sf-joinery-cats">
             <article class="sf-joinery-cat reveal">
                 <h3>Wardrobes</h3>
-                <p>Walk-in and fitted wardrobes designed around storage, lighting and daily use.</p>
+                <p style="margin-top: 5px;">Walk-in and fitted wardrobes designed around storage, lighting and daily use.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Bathroom vanities</h3>
-                <p>Custom vanities with considered storage, stone and durable finishes.</p>
+                <p style="margin-top: 5px;">Custom vanities with considered storage, stone and durable finishes.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Laundries</h3>
-                <p>Functional laundry joinery that conceals appliances and keeps spaces ordered.</p>
+                <p style="margin-top: 5px;">Functional laundry joinery that conceals appliances and keeps spaces ordered.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Entertainment units</h3>
-                <p>TV cabinetry and media walls integrated with the architecture of the room.</p>
+                <p style="margin-top: 5px;">TV cabinetry and media walls integrated with the architecture of the room.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Home offices</h3>
-                <p>Study joinery with concealed storage, cable management and clean lines.</p>
+                <p style="margin-top: 5px;">Study joinery with concealed storage, cable management and clean lines.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Bars &amp; display</h3>
-                <p>Bar joinery and display cabinetry for entertaining and feature spaces.</p>
+                <p style="margin-top: 5px;">Bar joinery and display cabinetry for entertaining and feature spaces.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Linen &amp; storage</h3>
-                <p>Linen towers and full-height storage designed to disappear into the wall.</p>
+                <p style="margin-top: 5px;">Linen towers and full-height storage designed to disappear into the wall.</p>
             </article>
             <article class="sf-joinery-cat reveal">
                 <h3>Architectural joinery</h3>
-                <p>Full-height panelling, integrated walls and detailed packages from drawings.</p>
-            </article>
+                <p style="margin-top: 5px;">Full-height panelling, integrated walls and detailed packages from drawings.</p>
+            </article> 
         </div>
     </div>
 </section>
@@ -56,7 +56,7 @@
 <section class="sf-section sf-section--graphite">
     <div class="container">
         <div class="sf-section__head reveal">
-            <p class="sf-eyebrow">Selected Work</p>
+            <p class="sf-eyebrow" style="margin-top: 0px;">Selected Work</p>
             <h2>Joinery projects</h2>
         </div>
         <div class="sf-projects-featured sf-projects-featured--three">

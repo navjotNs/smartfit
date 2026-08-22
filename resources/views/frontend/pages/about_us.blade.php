@@ -48,7 +48,7 @@
     </div>
 </section>
 
-<section class="sf-section sf-about-values">
+<section class="sf-section sf-about-values" style="background: #111;">
     <div class="container">
         <div class="sf-section__head reveal">
             <p class="sf-eyebrow">Our values</p>
@@ -57,27 +57,27 @@
         <div class="sf-values sf-values--six">
             <div class="sf-value reveal">
                 <h4>Quality First</h4>
-                <p>We never compromise on materials, workmanship or finish.</p>
+                <p style="margin-top: 10px;">We never compromise on materials, workmanship or finish.</p>
             </div>
             <div class="sf-value reveal">
                 <h4>Customer-Centric</h4>
-                <p>Every project is tailored to lifestyle, vision and budget.</p>
+                <p style="margin-top: 10px;">Every project is tailored to lifestyle, vision and budget.</p>
             </div>
             <div class="sf-value reveal">
                 <h4>Integrity</h4>
-                <p>We do what we promise and stand behind our work.</p>
+                <p style="margin-top: 10px;">We do what we promise and stand behind our work.</p>
             </div>
             <div class="sf-value reveal">
                 <h4>Craftsmanship</h4>
-                <p>Precision, detail and pride define everything we create.</p>
+                <p style="margin-top: 10px;">Precision, detail and pride define everything we create.</p>
             </div>
             <div class="sf-value reveal">
                 <h4>Reliability</h4>
-                <p>We deliver on time and communicate clearly at every stage.</p>
+                <p style="margin-top: 10px;">We deliver on time and communicate clearly at every stage.</p>
             </div>
             <div class="sf-value reveal">
                 <h4>Innovation</h4>
-                <p>Modern designs, smart storage and evolving trends.</p>
+                <p style="margin-top: 10px;">Modern designs, smart storage and evolving trends.</p>
             </div>
         </div>
     </div>

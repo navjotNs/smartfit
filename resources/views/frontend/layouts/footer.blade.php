@@ -35,14 +35,14 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-3 sf-footer__col sf-footer__contact">
                 <h4>Contact</h4>
-                <p>Unit 5/483B Dohertys Road<br>Truganina VIC 3029</p>
-                <p><a href="tel:0434991936">0434 991 936</a></p>
-                <p><a href="mailto:info@smartfitcabinets.com">info@smartfitcabinets.com</a></p>
+                <p style="margin-top: 10px;">Unit 5/483B Dohertys Road<br>Truganina VIC 3029</p>
+                <p style="margin-top: 10px;"><a href="tel:0434991936">0434 991 936</a></p>
+                <p style="margin-top: 10px;"><a href="mailto:info@smartfitcabinets.com">info@smartfitcabinets.com</a></p>
                 <a href="{{ route('contact') }}" class="sf-footer__cta">Request a Quote</a>
             </div>
         </div>
         <div class="sf-copyright">
-            <p>Copyright &copy; {{ date('Y') }} Smart Fit Cabinets. All Rights Reserved.</p>
+            <p style="margin-top: 5px;">Copyright &copy; {{ date('Y') }} Smart Fit Cabinets. All Rights Reserved.</p>
         </div>
     </div>
 </footer>

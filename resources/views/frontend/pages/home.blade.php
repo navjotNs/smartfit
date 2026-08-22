@@ -18,7 +18,7 @@
             <a href="{{ route('contact') }}" class="sf-btn sf-btn--outline">Book a Consultation</a>
         </div>
     </div>
-    <p class="sf-scroll-cue reveal">Scroll to discover</p>
+    <!-- <p class="sf-scroll-cue reveal">Scroll to discover</p> -->
 </section>
 
 {{-- TRUST STRIP --}}
