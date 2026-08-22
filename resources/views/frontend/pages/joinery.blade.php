@@ -49,25 +49,32 @@
                 <p>Full-height panelling, integrated walls and detailed packages from drawings.</p>
             </article>
         </div>
-
-        @if(isset($tours) && count($tours))
-            <div class="sf-service-page-grid">
-                @foreach($tours as $tour)
-                    <article class="sf-service-feature reveal">
-                        <div class="sf-service-feature__img">
-                            <img src="{!! asset($tour->image) !!}" alt="{{ $tour->title }}" loading="lazy">
-                        </div>
-                        <div class="sf-service-feature__body">
-                            <h3>{{ $tour->title }}</h3>
-                            <p>{{ $tour->meta_description ?: \Illuminate\Support\Str::limit(strip_tags($tour->description), 220) }}</p>
-                            <a href="{{ route('placeDetails', $tour->url) }}" class="sf-btn sf-btn--outline">View Service</a>
-                        </div>
-                    </article>
-                @endforeach
-            </div>
-        @endif
     </div>
 </section>
+
+@if(isset($projects) && count($projects))
+<section class="sf-section sf-section--graphite">
+    <div class="container">
+        <div class="sf-section__head reveal">
+            <p class="sf-eyebrow">Selected Work</p>
+            <h2>Joinery projects</h2>
+        </div>
+        <div class="sf-projects-featured sf-projects-featured--three">
+            @foreach($projects->take(6) as $project)
+                <a href="{{ route('projectDetails', $project->url) }}" class="sf-project-editorial reveal">
+                    <div class="sf-project-editorial__img">
+                        <img src="{!! asset($project->image) !!}" alt="{{ $project->title }}" loading="lazy">
+                    </div>
+                    <div class="sf-project-editorial__meta">
+                        <h3>{{ $project->title }}</h3>
+                        <span>View Project <i class="fa fa-long-arrow-right"></i></span>
+                    </div>
+                </a>
+            @endforeach
+        </div>
+    </div>
+</section>
+@endif
 
 <section class="sf-section sf-contact--band reveal">
     <div class="container text-center">

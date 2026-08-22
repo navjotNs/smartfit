@@ -389,7 +389,7 @@ $(document).ready(function(){
 jQuery('#main-nav').stellarNav({
         theme     : 'plain', 
         breakpoint: 1199, 
-        //menuLabel: '<a href="/"><img src="/assets/frontend/images/logo.png"></a>',  
+        menuLabel: '',
         phoneBtn: false, 
         locationBtn: false, 
         sticky     : false, 

@@ -51,20 +51,8 @@ class HomeController extends Controller{
     }
 
     public function services(){
-        $tours = Article::where('status', 1)
-            ->select('id', 'title', 'image', 'url', 'meta_description', 'description')
-            ->orderBy('sort_order', 'ASC')
-            ->get();
         $content = Content::where('id', 1)->first();
-        $sliders = Slider::where('status', 1)->where('title', 'Service')->select('image')->get();
-        if ($sliders->isEmpty()) {
-            $sliders = [
-                (object) ['image' => 'uploads/images/750707kitchen-service.jpg'],
-                (object) ['image' => 'uploads/images/670544kitchen_02.webp'],
-                (object) ['image' => 'uploads/images/235483laundry_12.webp'],
-            ];
-        }
-        return view('frontend.pages.services', compact('content', 'sliders', 'tours'));
+        return view('frontend.pages.services', compact('content'));
     }
     
     public function projects(){
@@ -193,11 +181,8 @@ class HomeController extends Controller{
 
     public function joinery(){
         $content = Content::where('id', 1)->first();
-        $tours = Article::where('status', 1)
-            ->select('id', 'title', 'image', 'url', 'meta_description', 'description')
-            ->orderBy('sort_order', 'ASC')
-            ->get();
-        return view('frontend.pages.joinery', compact('content', 'tours'));
+        $projects = Project::where('status', 1)->select('id', 'title', 'image', 'url')->orderBy('sort_order', 'ASC')->get();
+        return view('frontend.pages.joinery', compact('content', 'projects'));
     }
 
     public function buildersArchitects(){

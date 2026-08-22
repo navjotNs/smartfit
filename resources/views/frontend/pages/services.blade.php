@@ -3,59 +3,238 @@
 
 <section class="sf-page-hero sf-page-hero--luxury">
     <div class="sf-page-hero__media">
-        @if(isset($sliders) && count($sliders))
-            <div id="slider1" class="owl-carousel owl-theme sf-page-hero__carousel">
-                @foreach($sliders as $slider)
-                    <div class="item">
-                        <img src="{!! asset($slider->image) !!}" alt="Smart Fit Cabinets services">
-                    </div>
-                @endforeach
-            </div>
-        @else
-            <img src="{!! asset('uploads/images/750707kitchen-service.jpg') !!}" alt="Smart Fit Cabinets services">
-        @endif
+        <img src="{!! asset('assets/frontend/images/hero-kitchen.png') !!}" alt="Smart Fit Cabinets services">
         <div class="sf-page-hero__shade"></div>
     </div>
     <div class="sf-page-hero__content">
-        <p class="sf-eyebrow reveal">What we offer</p>
+        <p class="sf-eyebrow reveal">What We Build</p>
         <h1 class="reveal">Our Services</h1>
-        <p class="reveal">Custom cabinetry for every room — designed, built and installed with precision across Melbourne.</p>
+        <p class="reveal">From custom kitchens and wardrobes to vanities, laundries and architectural joinery — Smart Fit Cabinets delivers complete cabinetry packages across Melbourne.</p>
     </div>
 </section>
 
-<section class="sf-section sf-page-intro sf-section--graphite">
+<section class="sf-section sf-section--graphite">
     <div class="container">
         <div class="sf-page-intro__inner reveal">
-            <h2>Cabinet making done properly</h2>
-            <p>At Smart Fit Cabinets, we craft beautiful, high-quality custom cabinets for every room of your home. Whether you're renovating, building new, or upgrading storage, our team delivers joinery that fits your lifestyle, space and budget.</p>
+            <h2>Complete custom cabinetry</h2>
+            <p>Smart Fit Cabinets offers a comprehensive range of bespoke joinery. Whether you are fitting a new kitchen, upgrading storage, or delivering a full-home joinery package, our team manages design, documentation, manufacture and installation with precision and care.</p>
         </div>
+        <nav class="sf-svc-jump reveal" aria-label="Service categories">
+            <a href="#kitchens">Kitchens</a>
+            <a href="#wardrobes">Wardrobes</a>
+            <a href="#vanities">Vanities</a>
+            <a href="#laundries">Laundries</a>
+            <a href="#entertainment">Entertainment Units</a>
+            <a href="#offices">Home Offices</a>
+            <a href="#bars">Bars &amp; Display</a>
+            <a href="#architectural">Architectural Joinery</a>
+        </nav>
     </div>
 </section>
 
-<section class="sf-section sf-services-page sf-section--dark">
+<section class="sf-section sf-section--dark sf-svc-list">
     <div class="container">
-        <div class="sf-service-page-grid">
-            @foreach($tours as $tour)
-                <article class="sf-service-feature reveal">
-                    <div class="sf-service-feature__img">
-                        <img src="{!! asset($tour->image) !!}" alt="{{ $tour->title }}" loading="lazy">
-                    </div>
-                    <div class="sf-service-feature__body">
-                        <h3>{{ $tour->title }}</h3>
-                        <p>{{ $tour->meta_description ?: \Illuminate\Support\Str::limit(strip_tags($tour->description), 220) }}</p>
-                        <a href="{{ route('placeDetails', $tour->url) }}" class="sf-btn sf-btn--outline">View Service</a>
-                    </div>
-                </article>
-            @endforeach
+
+        <article class="sf-svc-block reveal" id="kitchens">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('assets/frontend/images/hero-kitchen.png') !!}" alt="Custom kitchen joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 01</p>
+                <h2>Kitchens</h2>
+                <p class="sf-svc-block__lead">Beautifully designed, expertly crafted.</p>
+                <p>A Smart Fit kitchen is tailored to the home, the brief and the way you live. From integrated appliances and concealed storage to stone, timber and architectural lighting — every layout is designed and manufactured with precision.</p>
+                <ul class="sf-svc-include">
+                    <li>Custom layouts and shop drawings</li>
+                    <li>Premium board, stone and hardware</li>
+                    <li>Manufacture and professional installation</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('kitchens') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="wardrobes">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/670544kitchen_02.webp') !!}" alt="Custom wardrobe joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 02</p>
+                <h2>Wardrobes</h2>
+                <p class="sf-svc-block__lead">Fitted storage designed around daily use.</p>
+                <p>Walk-in and fitted wardrobes with considered hanging, drawers, lighting and internal organisation. Designed to sit quietly in the architecture of the room — not as an afterthought.</p>
+                <ul class="sf-svc-include">
+                    <li>Walk-in and built-in configurations</li>
+                    <li>Internal lighting and accessories</li>
+                    <li>Full-height doors and refined detailing</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block reveal" id="vanities">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/860430bath_15.webp') !!}" alt="Custom bathroom vanities">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 03</p>
+                <h2>Bathroom vanities</h2>
+                <p class="sf-svc-block__lead">Durable joinery with refined detailing.</p>
+                <p>Custom vanities designed for wet areas, with considered storage, stone tops and finishes selected for longevity. Built to complement the bathroom architecture rather than sit as a standard unit.</p>
+                <ul class="sf-svc-include">
+                    <li>Custom sizes and storage layouts</li>
+                    <li>Stone tops and moisture-resistant construction</li>
+                    <li>Coordinated installation</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="laundries">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/235483laundry_12.webp') !!}" alt="Custom laundry joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 04</p>
+                <h2>Laundries</h2>
+                <p class="sf-svc-block__lead">Functional joinery that keeps spaces ordered.</p>
+                <p>Laundry cabinetry that conceals appliances, manages utilities and provides practical storage — finished to the same standard as the rest of the home.</p>
+                <ul class="sf-svc-include">
+                    <li>Appliance housing and benchtops</li>
+                    <li>Tall storage and hanging space</li>
+                    <li>Clean, easy-to-maintain finishes</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block reveal" id="entertainment">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/941639entertain_05.webp') !!}" alt="Entertainment unit joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 05</p>
+                <h2>Entertainment units</h2>
+                <p class="sf-svc-block__lead">Media walls integrated with the room.</p>
+                <p>TV cabinetry and entertainment joinery designed around screens, sound, storage and cable management — so the living space stays architectural and uncluttered.</p>
+                <ul class="sf-svc-include">
+                    <li>Media walls and TV cabinetry</li>
+                    <li>Concealed cable management</li>
+                    <li>Display and closed storage</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="offices">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/583683entertain_hdr_bg.webp') !!}" alt="Home office joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 06</p>
+                <h2>Home offices</h2>
+                <p class="sf-svc-block__lead">Study joinery with clean lines and storage.</p>
+                <p>Desks, shelving and concealed storage designed for how you work — with cable management, filing and a finish that belongs in a residential interior.</p>
+                <ul class="sf-svc-include">
+                    <li>Desks, libraries and wall joinery</li>
+                    <li>Concealed storage and cabling</li>
+                    <li>Quiet, durable finishes</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block reveal" id="bars">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/179545entertainment.webp') !!}" alt="Bar and display joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 07</p>
+                <h2>Bars &amp; display</h2>
+                <p class="sf-svc-block__lead">Feature joinery for entertaining.</p>
+                <p>Bar joinery, display cabinetry and feature walls designed as part of the architecture — for entertaining, collections and statement spaces.</p>
+                <ul class="sf-svc-include">
+                    <li>Home bars and servery joinery</li>
+                    <li>Display, lighting and glass storage</li>
+                    <li>Integrated appliances where required</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('joinery') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="architectural">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('assets/frontend/images/about_1.webp') !!}" alt="Architectural joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <p class="sf-eyebrow">Service 08</p>
+                <h2>Architectural joinery</h2>
+                <p class="sf-svc-block__lead">Bespoke craftsmanship for every room.</p>
+                <p>Full-height panelling, linen towers, integrated walls and detailed joinery packages worked from architectural drawings — for homeowners, builders and interior designers.</p>
+                <ul class="sf-svc-include">
+                    <li>Shop drawings and detailing</li>
+                    <li>Full-height and integrated joinery</li>
+                    <li>Manufacture and site installation</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('builders-architects') }}" class="sf-btn sf-btn--outline">Learn More</a>
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="sf-section sf-section--graphite">
+    <div class="container">
+        <div class="sf-section__head reveal">
+            <p class="sf-eyebrow">How It Works</p>
+            <h2>Our 7-Step Process</h2>
+        </div>
+        <div class="sf-process-strip reveal">
+            <div><span>01</span>Consultation</div>
+            <div><span>02</span>Design &amp; Planning</div>
+            <div><span>03</span>Quotation</div>
+            <div><span>04</span>Manufacture</div>
+            <div><span>05</span>Installation</div>
+            <div><span>06</span>Quality Inspection</div>
+            <div><span>07</span>Handover</div>
+        </div>
+        <div class="text-center reveal" style="margin-top: 2rem;">
+            <a href="{{ route('our-process') }}" class="sf-link">View the full process</a>
         </div>
     </div>
 </section>
 
 <section class="sf-section sf-contact--band reveal">
     <div class="container text-center">
-        <h2>Let's design your next space</h2>
-        <p style="max-width: 520px; margin: 0 auto 1.5rem;">Request a consultation — we'll measure, advise and quote with no obligation.</p>
-        <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Request a Consultation</a>
+        <h2>Ready to Get Started?</h2>
+        <p style="max-width: 560px; margin: 0 auto 1.5rem;">Contact us for a no-obligation consultation and quote on your next cabinetry project.</p>
+        <div class="sf-hero__actions" style="justify-content: center;">
+            <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+            <a href="{{ route('contact') }}" class="sf-btn sf-btn--outline">Contact Us</a>
+        </div>
     </div>
 </section>
 

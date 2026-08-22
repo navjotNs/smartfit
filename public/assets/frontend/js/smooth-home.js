@@ -31,7 +31,8 @@
     });
   });
 
-  if (prefersReduced || typeof Lenis === 'undefined') {
+  var isMobileNav = window.matchMedia('(max-width: 1199px)').matches;
+  if (prefersReduced || typeof Lenis === 'undefined' || isMobileNav) {
     // Fallback: simple CSS reveal via IntersectionObserver
     var reveals = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
