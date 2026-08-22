@@ -826,11 +826,11 @@ body:not(.sf-dark) .sf-process {
 }
 
 /* Home footer polish */
-body.content-pages.get-started footer,
-body.content-pages.home footer,
-body.content-pages.services footer,
-body.content-pages.projects footer,
-body.content-pages.about-us footer {
+body.content-pages.get-started:not(.sf-dark) footer,
+body.content-pages.home:not(.sf-dark) footer,
+body.content-pages.services:not(.sf-dark) footer,
+body.content-pages.projects:not(.sf-dark) footer,
+body.content-pages.about-us:not(.sf-dark) footer {
   background: var(--sf-ink);
   color: #fff;
 }
