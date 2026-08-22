@@ -1,7 +1,7 @@
 <footer class="sf-footer">
     <div class="container">
-        <div class="sf-footer__grid">
-            <div class="sf-footer__brand-col">
+        <div class="row sf-footer__grid">
+            <div class="col-12 col-sm-6 col-lg-3 sf-footer__col">
                 <a href="/" class="sf-footer__brand">SMART FIT<br><span>CABINETS</span></a>
                 <p class="sf-footer__tagline">Premium custom cabinetry and architectural joinery for Melbourne homes and spaces.</p>
                 <ul class="social">
@@ -12,7 +12,7 @@
                     @endif
                 </ul>
             </div>
-            <div>
+            <div class="col-12 col-sm-6 col-lg-3 sf-footer__col">
                 <h4>Quick Links</h4>
                 <ul class="sf-footer-links">
                     <li><a href="/">Home</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="col-12 col-sm-6 col-lg-3 sf-footer__col">
                 <h4>Services</h4>
                 <ul class="sf-footer-links">
                     <li><a href="{{ route('kitchens') }}">Kitchens</a></li>
@@ -33,7 +33,7 @@
                     <li><a href="{{ route('builders-architects') }}">Builders &amp; Architects</a></li>
                 </ul>
             </div>
-            <div class="sf-footer__contact">
+            <div class="col-12 col-sm-6 col-lg-3 sf-footer__col sf-footer__contact">
                 <h4>Contact</h4>
                 <p>Unit 5/483B Dohertys Road<br>Truganina VIC 3029</p>
                 <p><a href="tel:0434991936">0434 991 936</a></p>
