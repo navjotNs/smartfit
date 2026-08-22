@@ -1941,6 +1941,9 @@ a.sf-joinery-cat:hover {
   .sf-hero__lead.reveal{
       margin-top: 20px !important;
   }
+  .sf-hero__content.sf-hero__content--luxury .sf-eyebrow.reveal{
+      margin-top: 50px;
+  }
 }
 
 
