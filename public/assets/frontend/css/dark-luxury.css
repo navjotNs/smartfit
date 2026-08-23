@@ -1934,7 +1934,15 @@ a.sf-joinery-cat:hover {
   .sf-scroll-cue.reveal{
       margin-top: 20px !important;
   }
-
+  .sf-hero--luxury .sf-hero__content.sf-hero__content--luxury {
+    padding-top: 560px;
+  }
+  body.sf-dark .stellarnav.mobile li a{
+    font-size: 13px !important;
+  }
+  .stellarnav.mobile.left>ul, .stellarnav.mobile.right>ul{
+    max-width: 320px !important;
+  }
 
 }
 
