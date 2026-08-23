@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edgex">
 <meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <meta name="csrf-token" content="{!! csrf_token() !!}" />
     <link rel="icon" href="{!! asset('assets/frontend/images/logo_icon.png') !!}" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,10 +25,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
     <script src="https://kit.fontawesome.com/956568d106.js" crossorigin="anonymous"></script>
     <link rel="icon" href="{!! asset('/images/logo.png') !!}" type="image/png">
-{!! Html::style('assets/frontend/css/style.css') !!}
-{!! HTML::style('assets/frontend/css/stellarnav.min.css') !!}
-{!! HTML::style('assets/frontend/css/home-experience.css') !!}
-{!! HTML::style('assets/frontend/css/dark-luxury.css') !!}
+<link rel="stylesheet" href="{!! asset_v('assets/frontend/css/style.css') !!}">
+<link rel="stylesheet" href="{!! asset_v('assets/frontend/css/stellarnav.min.css') !!}">
+<link rel="stylesheet" href="{!! asset_v('assets/frontend/css/home-experience.css') !!}">
+<link rel="stylesheet" href="{!! asset_v('assets/frontend/css/dark-luxury.css') !!}">
 @yield('css')
 @php
     $route  = \Route::currentRouteName();    
@@ -66,11 +68,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-        {!! HTML::script('assets/frontend/js/stellarnav.min.js') !!}
+        <script src="{!! asset_v('assets/frontend/js/stellarnav.min.js') !!}"></script>
         <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-        {!! HTML::script('assets/frontend/js/smooth-home.js') !!}
+        <script src="{!! asset_v('assets/frontend/js/smooth-home.js') !!}"></script>
         <script>
             function rdmore() {
               var dots = document.getElementById("dots");

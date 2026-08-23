@@ -3,6 +3,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Cart;
 use Carbon\Carbon;
+
+if (!function_exists('asset_v')) {
+    function asset_v($path)
+    {
+        $full = public_path($path);
+        $version = file_exists($full) ? filemtime($full) : time();
+        return asset($path) . '?v=' . $version;
+    }
+}
 /**
  * @param $status
  * @param $statusCode

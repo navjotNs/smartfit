@@ -272,7 +272,8 @@ Route::get('reset', function (){
     Artisan::call('route:clear');
     Artisan::call('cache:clear');
     Artisan::call('view:clear');
-    Artisan::call('config:cache');
+    Artisan::call('config:clear');
+    return 'Cache cleared';
 });
 
 
