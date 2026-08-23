@@ -13,6 +13,7 @@
                 <li><a href="{{ route('services') }}">SERVICES</a></li>
                 <li><a href="{{ route('our-process') }}">OUR PROCESS</a></li>
                 <li><a href="{{ route('projects') }}">PROJECTS</a></li>
+                <li><a href="/builders-architects">Builders & Architects</a></li>
                 <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 <li class="sf-mobile-meta">
                     <div class="sf-mobile-contact">
@@ -38,6 +39,7 @@
                     <li><a href="{{ route('services') }}">SERVICES</a></li>
                     <li><a href="{{ route('our-process') }}">OUR PROCESS</a></li>
                     <li><a href="{{ route('projects') }}">PROJECTS</a></li>
+                    <li><a href="/builders-architects">Builders & Architects</a></li>
                     <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 </ul>
                 <a href="{{ route('contact') }}" class="sf-header-cta">REQUEST A QUOTE</a>

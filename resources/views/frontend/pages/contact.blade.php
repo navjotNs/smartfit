@@ -29,7 +29,7 @@
             <div class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-map-marker"></i></span>
                 <h3 style="font-size: 18px;">Address</h3>
-                <p style="margin-top: 0px;">Unit 5/483B Dohertys Road,<br>Truganina VIC 3029</p>
+                <p style="margin-top: 0px;">Unit 4/483B Dohertys Road,<br>Truganina VIC 3029</p>
             </div>
             <div class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-clock-o"></i></span>

@@ -147,17 +147,17 @@
     <div class="container">
         <div class="sf-contact__grid">
             <div class="sf-contact__intro reveal">
-                <p class="sf-eyebrow">Enquire</p>
+                <p class="sf-eyebrow" style="margin-top: 0px;">Enquire</p>
                 <h2>Let's create something exceptional.</h2>
-                <p>Discuss your kitchen, joinery or full-home cabinetry project with our team.</p>
+                <p style="margin-top: 0px;">Discuss your kitchen, joinery or full-home cabinetry project with our team.</p>
                 <div class="sf-contact__meta">
-                    <p><strong>Display Showroom</strong><br>Unit 5/483B Dohertys Road, Truganina, VIC 3029</p>
-                    <p><strong>Email</strong><br><a href="mailto:info@smartfitcabinets.com">info@smartfitcabinets.com</a></p>
+                    <p style="margin-top: 0px;"><strong>Display Showroom</strong><br>Unit 4/483B Dohertys Road, Truganina, VIC 3029</p>
+                    <p style="margin-top: 0px;"><strong>Email</strong><br><a href="mailto:info@smartfitcabinets.com.au">info@smartfitcabinets.com</a></p>
                 </div>
             </div>
             <div class="sf-contact__form reveal">
                 @if(session()->has('enquiry_sub'))
-                    <p class="sf-form-success">Your enquiry has been submitted successfully.</p>
+                    <p class="sf-form-success" style="margin-top: 0px;">Your enquiry has been submitted successfully.</p>
                 @endif
                 <form action="{{ route('contact-enquiry') }}" method="post">
                     {{ csrf_field() }}
@@ -173,13 +173,14 @@
                     <div class="sf-form-row">
                         <select name="service" required>
                             <option value="">Project Type *</option>
-                            <option value="Kitchen">Kitchen</option>
-                            <option value="Custom Joinery">Custom Joinery</option>
-                            <option value="Laundry">Laundry</option>
-                            <option value="Bath Cabinet">Vanity / Bath</option>
-                            <option value="Entertainment Unit">Entertainment Unit</option>
-                            <option value="Commercial">Commercial / Builder</option>
-                            <option value="Other">Other</option>
+                            <option value="Full House Joinery">Full House Joinery</option>
+                            <option value="Renovation">Renovation</option>
+                            <option value="Wardrobe">Wardrobe</option>
+                            <option value="Bathroom Renovation">Bathroom Renovation</option>
+                            <option value="Entertainment / TV Unit">Entertainment / TV Unit</option>
+                            <option value="Home Office / Study">Home Office / Study</option>
+                            <option value="Commercial Joinery">Commercial Joinery</option>
+                            <option value="Other / Custom Joinery">Other / Custom Joinery</option>
                         </select>
                     </div>
                     <div class="sf-form-row">
