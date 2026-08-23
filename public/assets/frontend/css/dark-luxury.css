@@ -1953,7 +1953,22 @@ a.sf-joinery-cat:hover {
   .sf-hero__content.sf-hero__content--luxury .sf-eyebrow.reveal{
       margin-top: 50px;
   }
+  .sf-hero--luxury {
+    min-height: 100dvh !important;
 }
+}
+@media(min-width:768px and max-width: 1199px){
+   .sf-logo img{
+    max-width: 60px;
+   }
+  .menu-toggle  {
+    position: absolute;
+    right: 0px;
+  }
+
+  
+}
+
 
 
 

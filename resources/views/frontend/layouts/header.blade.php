@@ -27,7 +27,7 @@
         <div class="row deskMenu align-items-center">
             <div class="col-md-3 logodiv">
                 <a href="/" class="sf-logo sf-logo--desktop">
-                    <span class="sf-logo__text">SMART FIT<br>CABINETS</span>
+                    <img src="{!! asset('assets/frontend/images/logo.png') !!}" alt="Smart Fit Cabinets">
                 </a>
             </div>
             <div class="col-md-9 sf-nav-right">
