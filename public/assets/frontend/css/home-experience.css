@@ -56,7 +56,6 @@ body.content-pages.about-us:not(.sf-dark) p {
 
 body:not(.sf-dark) .sf-header.is-scrolled {
   background: rgba(246, 246, 244, 0.92) !important;
-  backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--sf-line);
   padding: 6px 0 !important;
 }

@@ -1966,9 +1966,14 @@ a.sf-joinery-cat:hover {
     right: 0px;
   }
 
-  
+
 }
 
+@media(min-width: 1200px){
+  .sf-logo.sf-logo--desktop img{
+    width: 50px;
+  }
+}
 
 
 
