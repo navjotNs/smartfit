@@ -1013,7 +1013,7 @@ body.sf-dark .sf-gallery {
   }
   .sf-hero__carousel img,
   .sf-hero__fallback img {
-    height: 78vh;
+    height: 100vh;
   }
   .sf-brand--luxury {
     font-size: clamp(2.2rem, 10vw, 3rem);

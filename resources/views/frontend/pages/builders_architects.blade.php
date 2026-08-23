@@ -17,28 +17,28 @@
     <div class="container">
         <div class="sf-capability-grid sf-capability-grid--wide">
             <div class="sf-capability reveal">
-                <h4>Accurate Documentation</h4>
-                <p>We work from architectural drawings, specifications and detailed briefs.</p>
+                <h4 style="font-size: 18px;">Accurate Documentation</h4>
+                <p style="margin-top: 0px;">We work from architectural drawings, specifications and detailed briefs.</p>
             </div>
             <div class="sf-capability reveal">
-                <h4>Shop Drawings &amp; Detailing</h4>
-                <p>Clear approvals before manufacture to keep programmes on track.</p>
+                <h4 style="font-size: 18px;"></h4>Shop Drawings &amp; Detailing</h4>
+                <p style="margin-top: 0px;">Clear approvals before manufacture to keep programmes on track.</p>
             </div>
             <div class="sf-capability reveal">
-                <h4>Reliable Communication</h4>
-                <p>Transparent programme updates, coordination and issue resolution.</p>
+                <h4 style="font-size: 18px;"></h4>Reliable Communication</h4>
+                <p style="margin-top: 0px;">Transparent programme updates, coordination and issue resolution.</p>
             </div>
             <div class="sf-capability reveal">
-                <h4>Precision Manufacturing</h4>
-                <p>Advanced machinery, quality control and consistent finishes.</p>
+                <h4 style="font-size: 18px;"></h4>Precision Manufacturing</h4>
+                <p style="margin-top: 0px;">Advanced machinery, quality control and consistent finishes.</p>
             </div>
             <div class="sf-capability reveal">
-                <h4>Professional Installation</h4>
-                <p>Organised site delivery and skilled on-site installation teams.</p>
+                <h4 style="font-size: 18px;"></h4>Professional Installation</h4>
+                <p style="margin-top: 0px;">Organised site delivery and skilled on-site installation teams.</p>
             </div>
             <div class="sf-capability reveal">
-                <h4>Repeat Partnership</h4>
-                <p>Built for long-term collaboration on residential and commercial projects.</p>
+                <h4 style="font-size: 18px;"></h4>Repeat Partnership</h4>
+                <p style="margin-top: 0px;">Built for long-term collaboration on residential and commercial projects.</p>
             </div>
         </div>
     </div>

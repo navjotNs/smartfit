@@ -33,11 +33,11 @@
             </div>
             <div class="col-md-9 sf-nav-right">
                 <ul class="sf-nav-links">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="{{ route('about-us') }}">ABOUT US</a></li>
+                    <li><a href="{{ route('services') }}">SERVICES</a></li>
+                    <li><a href="{{ route('our-process') }}">OUR PROCESS</a></li>
                     <li><a href="{{ route('projects') }}">PROJECTS</a></li>
-                    <li><a href="{{ route('kitchens') }}">KITCHENS</a></li>
-                    <li><a href="{{ route('joinery') }}">JOINERY</a></li>
-                    <li><a href="{{ route('builders-architects') }}">BUILDERS<span class="sf-nav-extra"> &amp; ARCHITECTS</span></a></li>
-                    <li><a href="{{ route('about-us') }}">ABOUT</a></li>
                     <li><a href="{{ route('contact') }}">CONTACT</a></li>
                 </ul>
                 <a href="{{ route('contact') }}" class="sf-header-cta">REQUEST A QUOTE</a>
