@@ -29,36 +29,36 @@
                 <span class="sf-trust__icon" aria-hidden="true">
                     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="14" width="32" height="22" rx="1"/><path d="M8 22h32M20 14v22"/></svg>
                 </span>
-                <h3>Bespoke Design</h3>
-                <p>Custom solutions tailored to the project.</p>
+                <h3 style="font-size: 18px;">Bespoke Design</h3>
+                <p style="margin-top: 5px;">Custom solutions tailored to the project.</p>
             </div>
             <div class="sf-trust__item reveal">
                 <span class="sf-trust__icon" aria-hidden="true">
                     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 8l14 8v16L24 40 10 32V16z"/><path d="M24 16v24M10 16l14 8 14-8"/></svg>
                 </span>
-                <h3>Premium Materials</h3>
-                <p>Quality board, stone, hardware and finishes.</p>
+                <h3 style="font-size: 18px;">Premium Materials</h3>
+                <p style="margin-top: 5px;">Quality board, stone, hardware and finishes.</p>
             </div>
             <div class="sf-trust__item reveal">
                 <span class="sf-trust__icon" aria-hidden="true">
                     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="24" cy="24" r="14"/><path d="M24 16v8l6 4"/></svg>
                 </span>
-                <h3>Precision Crafted</h3>
-                <p>Advanced machinery plus skilled craftsmanship.</p>
+                <h3 style="font-size: 18px;">Precision Crafted</h3>
+                <p style="margin-top: 5px;">Advanced machinery plus skilled craftsmanship.</p>
             </div>
             <div class="sf-trust__item reveal">
                 <span class="sf-trust__icon" aria-hidden="true">
                     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 34V14h24v20"/><path d="M8 34h32M18 22h12M18 28h8"/></svg>
                 </span>
-                <h3>End-to-End Service</h3>
-                <p>Documentation, manufacture and installation.</p>
+                <h3 style="font-size: 18px;">End-to-End Service</h3>
+                <p style="margin-top: 5px;">Documentation, manufacture and installation.</p>
             </div>
             <div class="sf-trust__item reveal">
                 <span class="sf-trust__icon" aria-hidden="true">
                     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="18" cy="18" r="5"/><circle cx="30" cy="18" r="5"/><path d="M10 34c1.5-6 5-9 8-9s6.5 3 8 9M22 34c1.5-6 5-9 8-9s6.5 3 8 9"/></svg>
                 </span>
-                <h3>Trusted Partner</h3>
-                <p>Builder, architect and designer collaboration.</p>
+                <h3 style="font-size: 18px;">Trusted Partner</h3>
+                <p style="margin-top: 5px;">Builder, architect and designer collaboration.</p>
             </div>
         </div>
     </div>
