@@ -24,10 +24,11 @@
                 </li>
             </ul>
         </div>
+        
         <div class="row deskMenu align-items-center">
             <div class="col-md-3 logodiv">
                 <a href="/" class="sf-logo sf-logo--desktop">
-                    <img src="{!! asset('assets/frontend/images/logo.png') !!}" alt="Smart Fit Cabinets">
+                    <img src="{!! asset('assets/frontend/images/logo.png') !!}" style="max-width: 50px;" alt="Smart Fit Cabinets">
                 </a>
             </div>
             <div class="col-md-9 sf-nav-right">
