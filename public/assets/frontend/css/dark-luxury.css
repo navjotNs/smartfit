@@ -954,6 +954,7 @@ body.sf-dark footer {
 /* Override light theme remnants */
 body.sf-dark .sf-header.is-scrolled {
   background: rgba(17, 17, 17, 0.92) !important;
+  backdrop-filter: none !important;
 }
 
 body.sf-dark .sf-services,
