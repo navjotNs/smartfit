@@ -6,9 +6,9 @@
                 <p class="sf-footer__tagline">Premium custom cabinetry and architectural joinery for Melbourne homes and spaces.</p>
                 <ul class="social">
                     @if(!empty($content))
-                    <li><a href="{{ $content->instagram }}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="{{ $content->facebook }}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="{{ $content->linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href=" https://www.instagram.com/smartfitcabinets?igsi=cWZhN3l5YXlkd3lx&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/share/1C23Xj6mTB/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@_smartfitcabinets_?_r=1&_t=ZS-997EOb9DO4m" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-tiktok"></i></a></li>
                     @endif
                 </ul>
             </div>
