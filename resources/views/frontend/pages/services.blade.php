@@ -130,7 +130,7 @@
             </div>
         </article>
 
-        <article class="sf-svc-block reveal" id="bars">
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="bars">
             <div class="sf-svc-block__media">
                 <img src="{!! asset('uploads/images/bar_disp.jpeg') !!}" alt="Bar and display joinery">
             </div>
