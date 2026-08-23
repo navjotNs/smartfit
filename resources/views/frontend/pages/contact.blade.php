@@ -18,41 +18,41 @@
         <div class="sf-info-cards">
             <a href="tel:0434991936" class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-phone"></i></span>
-                <h3>Phone</h3>
-                <p>0434 991 936</p>
+                <h3 style="font-size: 18px;">Phone</h3>
+                <p style="margin-top: 0px;">0434 991 936</p>
             </a>
             <a href="mailto:info@smartfitcabinets.com" class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-envelope"></i></span>
-                <h3>Email</h3>
-                <p>info@smartfitcabinets.com</p>
+                <h3 style="font-size: 18px;">Email</h3>
+                <p style="margin-top: 0px;">info@smartfitcabinets.com.au</p>
             </a>
             <div class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-map-marker"></i></span>
-                <h3>Address</h3>
-                <p>Unit 5/483B Dohertys Road,<br>Truganina VIC 3029</p>
+                <h3 style="font-size: 18px;">Address</h3>
+                <p style="margin-top: 0px;">Unit 5/483B Dohertys Road,<br>Truganina VIC 3029</p>
             </div>
             <div class="sf-info-card reveal">
                 <span class="sf-info-card__icon"><i class="fa fa-clock-o"></i></span>
-                <h3>Business Hours</h3>
-                <p>Mon – Fri: 7:00am – 5:00pm<br>Saturday: By appointment<br>Sunday: Closed</p>
+                <h3 style="font-size: 18px;">Business Hours</h3>
+                <p style="margin-top: 0px;">Mon – Fri: 7:00am – 5:00pm<br>Saturday: By appointment<br>Sunday: Closed</p>
             </div>
         </div>
 
         <div class="sf-quote-banner reveal">
             <div>
                 <h3>Need a detailed quote?</h3>
-                <p>Share project details, suburb and joinery type — we’ll come back with next steps.</p>
+                <p style="margin-top: 0px;">Share project details, suburb and joinery type — we’ll come back with next steps.</p>
             </div>
             <a href="#send-message" class="sf-btn sf-btn--champagne">Request a Quote</a>
         </div>
 
         <div class="sf-contact__grid sf-contact__grid--page" id="send-message">
             <div class="sf-contact__form reveal">
-                <p class="sf-eyebrow">Send Us a Message</p>
+                <p class="sf-eyebrow" style="margin-top: 0px;">Send Us a Message</p>
                 <h2>Fill in the form</h2>
-                <p class="sf-form-lead">We'll be in touch shortly.</p>
+                <p class="sf-form-lead" style="margin-top: 0px;">We'll be in touch shortly.</p>
                 @if(session()->has('enquiry_sub'))
-                    <p class="sf-form-success">Your enquiry has been submitted successfully.</p>
+                    <p class="sf-form-success" style="margin-top: 0px;">Your enquiry has been submitted successfully.</p>
                 @endif
                 <form action="{{ route('contact-enquiry') }}" method="post">
                     {{ csrf_field() }}
@@ -94,7 +94,7 @@
             </div>
             <div class="sf-contact-map reveal">
                 <h2>Find Us</h2>
-                <p>Unit 5/483B Dohertys Road, Truganina VIC 3029</p>
+                <p style="margin-top: 0px;">Unit 5/483B Dohertys Road, Truganina VIC 3029</p>
                 <div class="sf-contact-map__embed">
                     <iframe title="Smart Fit Cabinets location"
                         src="https://maps.google.com/maps?q=Unit%205%2F483B%20Dohertys%20Road%2C%20Truganina%20VIC%203029&t=&z=15&ie=UTF8&iwloc=&output=embed"

@@ -20,13 +20,13 @@
             <p>Smart Fit Cabinets offers a comprehensive range of bespoke joinery. Whether you are fitting a new kitchen, upgrading storage, or delivering a full-home joinery package, our team manages design, documentation, manufacture and installation with precision and care.</p>
         </div>
         <nav class="sf-svc-jump reveal" aria-label="Service categories">
-            <a href="#kitchens">Kitchens</a>
-            <a href="#wardrobes">Wardrobes</a>
+            <a href="#kitchens">Kitchen</a>
+            <a href="#laundries">Laundry</a>
             <a href="#vanities">Vanities</a>
-            <a href="#laundries">Laundries</a>
+            <a href="#wardrobes">Custom Wardrobes</a>
             <a href="#entertainment">Entertainment Units</a>
+            <a href="#bars">Bar/Display</a>
             <a href="#offices">Home Offices</a>
-            <a href="#bars">Bars &amp; Display</a>
             <a href="#architectural">Architectural Joinery</a>
         </nav>
     </div>
@@ -149,7 +149,7 @@
             </div>
         </article>
 
-        <article class="sf-svc-block sf-svc-block--reverse reveal" id="offices">
+        <article class="sf-svc-block reveal" id="offices">
             <div class="sf-svc-block__media">
                 <img src="{!! asset('uploads/images/home_office.jpeg') !!}" alt="Home office joinery">
             </div>

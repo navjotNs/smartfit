@@ -14,7 +14,7 @@
         <h1 class="sf-brand sf-brand--luxury reveal">Designed to inspire.<br><em>Built to last.</em></h1>
         <p class="sf-hero__lead reveal">Premium custom cabinetry and architectural joinery for Melbourne's exceptional homes and spaces.</p>
         <div class="sf-hero__actions reveal">
-            <a href="{{ route('projects') }}" class="sf-btn sf-btn--champagne">View Our Projects</a>
+            <!-- <a href="{{ route('projects') }}" class="sf-btn sf-btn--champagne">View Our Projects</a> -->
             <a href="{{ route('contact') }}" class="sf-btn sf-btn--outline">Book a Consultation</a>
         </div>
     </div>
@@ -151,7 +151,7 @@
                 <h2>Let's create something exceptional.</h2>
                 <p>Discuss your kitchen, joinery or full-home cabinetry project with our team.</p>
                 <div class="sf-contact__meta">
-                    <p><strong>Workshop</strong><br>Unit 5/483B Dohertys Road, Truganina, VIC 3029</p>
+                    <p><strong>Display Showroom</strong><br>Unit 5/483B Dohertys Road, Truganina, VIC 3029</p>
                     <p><strong>Email</strong><br><a href="mailto:info@smartfitcabinets.com">info@smartfitcabinets.com</a></p>
                 </div>
             </div>
