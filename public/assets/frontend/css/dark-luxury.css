@@ -1945,7 +1945,11 @@ a.sf-joinery-cat:hover {
   }
 
 }
-
+@media(min-width: 1200px){
+  .sf-logo.sf-logo--desktop img{
+    width: 50px;
+  }
+}
 @media(min-width:768px){
   .sf-hero__lead.reveal{
       margin-top: 20px !important;
@@ -1969,11 +1973,7 @@ a.sf-joinery-cat:hover {
 
 }
 
-@media(min-width: 1200px){
-  .sf-logo.sf-logo--desktop img{
-    width: 50px;
-  }
-}
+
 
 
 
