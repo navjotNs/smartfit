@@ -10,7 +10,7 @@
         <div class="sf-hero__shade sf-hero__shade--luxury"></div>
     </div>
     <div class="sf-hero__content sf-hero__content--luxury">
-        <p class="sf-eyebrow reveal">Bespoke Cabinetry &amp; Joinery</p>
+        <p class="sf-eyebrow reveal" style="color: #fff;">Bespoke Cabinetry &amp; Joinery</p>
         <h1 class="sf-brand sf-brand--luxury reveal">Designed to inspire.<br><em>Built to last.</em></h1>
         <p class="sf-hero__lead reveal">Premium custom cabinetry and architectural joinery for Melbourne's exceptional homes and spaces.</p>
         <div class="sf-hero__actions reveal">
