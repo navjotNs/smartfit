@@ -197,7 +197,7 @@ header ul li {
 /* Hero */
 .sf-hero--luxury {
   min-height: 85vh;
-  min-height: 85dvh;
+  min-height: 100dvh;
 }
 
 .sf-hero__shade--luxury {
@@ -257,7 +257,7 @@ header ul li {
 .sf-hero__carousel img,
 .sf-hero__fallback img {
   height: 85vh;
-  height: 85dvh;
+  height: 100dvh;
 }
 
 /* Trust strip */
