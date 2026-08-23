@@ -40,7 +40,7 @@
                 <img src="{!! asset('assets/frontend/images/Kitchens_j.jpeg') !!}" alt="Custom kitchen joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Kitchens</h2>
+                <h2>Kitchen</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Beautifully designed, expertly crafted.</p>
                 <p style="margin-top: 0px;">A Smart Fit kitchen is tailored to the home, the brief and the way you live. From integrated appliances and concealed storage to stone, timber and architectural lighting — every layout is designed and manufactured with precision.</p>
                 <ul class="sf-svc-include">
@@ -59,7 +59,7 @@
                 <img src="{!! asset('uploads/images/laundry.jpeg') !!}" alt="Custom laundry joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Laundries</h2>
+                <h2>Laundry</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Functional joinery that keeps spaces ordered.</p>
                 <p style="margin-top: 0px;">Laundry cabinetry that conceals appliances, manages utilities and provides practical storage — finished to the same standard as the rest of the home.</p>
                 <ul class="sf-svc-include">
@@ -78,7 +78,7 @@
                 <img src="{!! asset('uploads/images/860430bath_15.webp') !!}" alt="Custom bathroom vanities">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Bathroom vanities</h2>
+                <h2>Vanities</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Durable joinery with refined detailing.</p>
                 <p style="margin-top: 0px;">Custom vanities designed for wet areas, with considered storage, stone tops and finishes selected for longevity. Built to complement the bathroom architecture rather than sit as a standard unit.</p>
                 <ul class="sf-svc-include">
@@ -97,7 +97,7 @@
                 <img src="{!! asset('uploads/images/bardwrobe.jpeg') !!}" alt="Custom wardrobe joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Wardrobes</h2>
+                <h2>Custom Wardrobes</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Fitted storage designed around daily use.</p>
                 <p style="margin-top: 0px;">Walk-in and fitted wardrobes with considered hanging, drawers, lighting and internal organisation. Designed to sit quietly in the architecture of the room — not as an afterthought.</p>
                 <ul class="sf-svc-include">
@@ -135,7 +135,7 @@
                 <img src="{!! asset('uploads/images/bar_disp.jpeg') !!}" alt="Bar and display joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Bars &amp; display</h2>
+                <h2>Bar/Display</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Feature joinery for entertaining.</p>
                 <p style="margin-top: 0px;">Bar joinery, display cabinetry and feature walls designed as part of the architecture — for entertaining, collections and statement spaces.</p>
                 <ul class="sf-svc-include">
@@ -154,7 +154,7 @@
                 <img src="{!! asset('uploads/images/home_office.jpeg') !!}" alt="Home office joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Home offices</h2>
+                <h2>Home Office</h2>
                 <p style="margin-top: 0px;" class="sf-svc-block__lead">Study joinery with clean lines and storage.</p>
                 <p style="margin-top: 0px;">Desks, shelving and concealed storage designed for how you work — with cable management, filing and a finish that belongs in a residential interior.</p>
                 <ul class="sf-svc-include">
@@ -173,7 +173,7 @@
                 <img src="{!! asset('assets/frontend/images/arct.jpeg') !!}" alt="Architectural joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Architectural joinery</h2>
+                <h2>Custom Joinery instead of architectural</h2>
                 <p class="sf-svc-block__lead" style="margin-top: 0px;">Bespoke craftsmanship for every room.</p>
                 <p style="margin-top: 0px;">Full-height panelling, linen towers, integrated walls and detailed joinery packages worked from architectural drawings — for homeowners, builders and interior designers.</p>
                 <ul class="sf-svc-include">
