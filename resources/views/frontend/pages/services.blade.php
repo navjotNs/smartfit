@@ -130,25 +130,6 @@
             </div>
         </article>
 
-        <article class="sf-svc-block sf-svc-block--reverse reveal" id="offices">
-            <div class="sf-svc-block__media">
-                <img src="{!! asset('uploads/images/home_office.jpeg') !!}" alt="Home office joinery">
-            </div>
-            <div class="sf-svc-block__copy">
-                <h2>Home offices</h2>
-                <p style="margin-top: 0px;" class="sf-svc-block__lead">Study joinery with clean lines and storage.</p>
-                <p style="margin-top: 0px;">Desks, shelving and concealed storage designed for how you work — with cable management, filing and a finish that belongs in a residential interior.</p>
-                <ul class="sf-svc-include">
-                    <li>Desks, libraries and wall joinery</li>
-                    <li>Concealed storage and cabling</li>
-                    <li>Quiet, durable finishes</li>
-                </ul>
-                <div class="sf-hero__actions">
-                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
-                </div>
-            </div>
-        </article>
-
         <article class="sf-svc-block reveal" id="bars">
             <div class="sf-svc-block__media">
                 <img src="{!! asset('uploads/images/bar_disp.jpeg') !!}" alt="Bar and display joinery">
@@ -161,6 +142,25 @@
                     <li>Home bars and servery joinery</li>
                     <li>Display, lighting and glass storage</li>
                     <li>Integrated appliances where required</li>
+                </ul>
+                <div class="sf-hero__actions">
+                    <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="sf-svc-block sf-svc-block--reverse reveal" id="offices">
+            <div class="sf-svc-block__media">
+                <img src="{!! asset('uploads/images/home_office.jpeg') !!}" alt="Home office joinery">
+            </div>
+            <div class="sf-svc-block__copy">
+                <h2>Home offices</h2>
+                <p style="margin-top: 0px;" class="sf-svc-block__lead">Study joinery with clean lines and storage.</p>
+                <p style="margin-top: 0px;">Desks, shelving and concealed storage designed for how you work — with cable management, filing and a finish that belongs in a residential interior.</p>
+                <ul class="sf-svc-include">
+                    <li>Desks, libraries and wall joinery</li>
+                    <li>Concealed storage and cabling</li>
+                    <li>Quiet, durable finishes</li>
                 </ul>
                 <div class="sf-hero__actions">
                     <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Get a Quote</a>
