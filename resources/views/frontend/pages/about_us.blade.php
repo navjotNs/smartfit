@@ -15,9 +15,9 @@
         <div class="sf-page-hero__shade"></div>
     </div>
     <div class="sf-page-hero__content">
-        <p class="sf-eyebrow reveal">About us</p>
+        <p style="margin-top: 0px;" class="sf-eyebrow reveal">About us</p>
         <h1 class="reveal">Craft specialists<br>for Melbourne homes</h1>
-        <p class="reveal">Fully qualified cabinet makers creating beautifully crafted, functional spaces.</p>
+        <p style="margin-top: 0px;" class="reveal">Fully qualified cabinet makers creating beautifully crafted, functional spaces.</p>
     </div>
 </section>
 
@@ -41,9 +41,9 @@
 <section class="sf-section sf-vision">
     <div class="container">
         <div class="sf-vision__inner reveal">
-            <p class="sf-eyebrow">Our vision</p>
+            <p style="margin-top: 0px;" class="sf-eyebrow">Our vision</p>
             <h2>To be a trusted leader in custom cabinetry across Melbourne</h2>
-            <p>Known for exceptional craftsmanship, innovative design, and spaces that enhance everyday living.</p>
+            <p style="margin-top: 0px;">Known for exceptional craftsmanship, innovative design, and spaces that enhance everyday living.</p>
         </div>
     </div>
 </section>
@@ -51,7 +51,7 @@
 <section class="sf-section sf-about-values" style="background: #111;">
     <div class="container">
         <div class="sf-section__head reveal">
-            <p class="sf-eyebrow">Our values</p>
+            <p style="margin-top: 0px;" class="sf-eyebrow">Our values</p>
             <h2>What we stand for</h2>
         </div>
         <div class="sf-values sf-values--six">
@@ -86,9 +86,9 @@
 <section class="sf-section sf-expertise sf-why-choose">
     <div class="container sf-expertise__inner">
         <div class="sf-expertise__text reveal">
-            <p class="sf-eyebrow" style="color: rgba(255,255,255,0.7);">Why choose us</p>
+            <p style="margin-top: 0px;" class="sf-eyebrow" style="color: rgba(255,255,255,0.7);">Why choose us</p>
             <h2>Expert craftsmanship. Personal service. On-time delivery.</h2>
-            <p>Every cabinet is built with precision and lasting quality. We collaborate closely to reflect your style and budget, use premium materials, and respect your timeline from measure to install.</p>
+            <p style="margin-top: 0px;">Every cabinet is built with precision and lasting quality. We collaborate closely to reflect your style and budget, use premium materials, and respect your timeline from measure to install.</p>
             <a href="{{ route('services') }}" class="sf-btn sf-btn--solid">Explore services</a>
             <a href="{{ route('projects') }}" class="sf-link">View projects</a>
         </div>
@@ -103,9 +103,9 @@
         <img src="{!! asset('uploads/images/670544kitchen_02.webp') !!}" alt="" loading="lazy">
     </div>
     <div class="container sf-inspire__content reveal">
-        <p class="sf-eyebrow">Get in touch</p>
+        <p style="margin-top: 0px;" class="sf-eyebrow">Get in touch</p>
         <h2>Let’s talk about your project</h2>
-        <p>Ready for a kitchen, laundry or vanity that turns heads? We’re here to help.</p>
+        <p style="margin-top: 0px;">Ready for a kitchen, laundry or vanity that turns heads? We’re here to help.</p>
         <a href="{{ route('contact') }}" class="sf-btn sf-btn--light">Contact us</a>
     </div>
 </section>

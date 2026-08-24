@@ -7,9 +7,9 @@
         <div class="sf-page-hero__shade"></div>
     </div>
     <div class="sf-page-hero__content">
-        <p class="sf-eyebrow reveal">What We Build</p>
+        <p style="margin-top: 0px;" class="sf-eyebrow reveal">What We Build</p>
         <h1 class="reveal">Our Services</h1>
-        <p class="reveal">From custom kitchens and wardrobes to vanities, laundries and architectural joinery — Smart Fit Cabinets delivers complete cabinetry packages across Melbourne.</p>
+        <p style="margin-top: 0px;" class="reveal">From custom kitchens and wardrobes to vanities, laundries and architectural joinery — Smart Fit Cabinets delivers complete cabinetry packages across Melbourne.</p>
     </div>
 </section>
 
@@ -27,7 +27,7 @@
             <a href="#entertainment">Entertainment Units</a>
             <a href="#bars">Bar/Display</a>
             <a href="#offices">Home Offices</a>
-            <a href="#architectural">Architectural Joinery</a>
+            <a href="#architectural">Custom Joinery</a>
         </nav>
     </div>
 </section>
@@ -173,7 +173,7 @@
                 <img src="{!! asset('assets/frontend/images/arct.jpeg') !!}" alt="Architectural joinery">
             </div>
             <div class="sf-svc-block__copy">
-                <h2>Custom Joinery instead of architectural</h2>
+                <h2>Custom Joinery</h2>
                 <p class="sf-svc-block__lead" style="margin-top: 0px;">Bespoke craftsmanship for every room.</p>
                 <p style="margin-top: 0px;">Full-height panelling, linen towers, integrated walls and detailed joinery packages worked from architectural drawings — for homeowners, builders and interior designers.</p>
                 <ul class="sf-svc-include">

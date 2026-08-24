@@ -121,10 +121,10 @@
             <img src="{!! asset('assets/frontend/images/about_1.webp') !!}" alt="Smart Fit Cabinets Melbourne workshop" loading="lazy">
         </div>
         <div class="sf-workshop__copy reveal">
-            <p class="sf-eyebrow">Melbourne Made</p>
+            <p class="sf-eyebrow" style="margin-top: 0px;">Melbourne Made</p>
             <h2>Local expertise.<br>Uncompromising quality.</h2>
-            <p>Smart Fit Cabinets designs and manufactures bespoke joinery locally — combining architectural precision with the warmth of natural timber, stone and refined detailing.</p>
-            <p>From documentation through to installation, our team delivers joinery packages builders, architects and homeowners can rely on.</p>
+            <p style="margin-top: 0px;">Smart Fit Cabinets designs and manufactures bespoke joinery locally — combining architectural precision with the warmth of natural timber, stone and refined detailing.</p>
+            <p style="margin-top: 0px;">From documentation through to installation, our team delivers joinery packages builders, architects and homeowners can rely on.</p>
             <a href="{{ route('about-us') }}" class="sf-btn sf-btn--outline">About Smart Fit</a>
         </div>
     </div>
@@ -134,9 +134,9 @@
 <section class="sf-section sf-partners sf-section--dark">
     <div class="container sf-partners__inner reveal">
         <div>
-            <p class="sf-eyebrow">For Professionals</p>
+            <p style="margin-top: 0px;" class="sf-eyebrow">For Professionals</p>
             <h2>A cabinetry partner you can rely on.</h2>
-            <p>Accurate documentation, reliable communication, precision manufacturing and professional installation — for builders, architects and interior designers.</p>
+            <p style="margin-top: 0px;">Accurate documentation, reliable communication, precision manufacturing and professional installation — for builders, architects and interior designers.</p>
         </div>
         <a href="{{ route('builders-architects') }}" class="sf-btn sf-btn--champagne">Work With Us</a>
     </div>
@@ -152,7 +152,7 @@
                 <p style="margin-top: 0px;">Discuss your kitchen, joinery or full-home cabinetry project with our team.</p>
                 <div class="sf-contact__meta">
                     <p style="margin-top: 0px;"><strong>Display Showroom</strong><br>Unit 4/483B Dohertys Road, Truganina, VIC 3029</p>
-                    <p style="margin-top: 0px;"><strong>Email</strong><br><a href="mailto:info@smartfitcabinets.com.au">info@smartfitcabinets.com</a></p>
+                    <p style="margin-top: 0px;"><strong>Email</strong><br><a href="mailto:info@smartfitcabinets.com.au">info@smartfitcabinets.com.au</a></p>
                 </div>
             </div>
             <div class="sf-contact__form reveal">
