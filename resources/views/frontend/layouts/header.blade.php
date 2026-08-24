@@ -18,8 +18,8 @@
                 <li class="sf-mobile-meta">
                     <div class="sf-mobile-contact">
                         <a href="tel:0434991936"><i class="fa fa-phone"></i> 0434 991 936</a>
-                        <a href="mailto:info@smartfitcabinets.com"><i class="fa fa-envelope-o"></i> info@smartfitcabinets.com</a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=Unit+5/483B+Dohertys+Road,+Truganina+VIC+3029" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Unit 5/483B Dohertys Rd, Truganina VIC 3029</a>
+                        <a href="mailto:info@smartfitcabinets.com"><i class="fa fa-envelope-o"></i> info@smartfitcabinets.com.au</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Unit+5/483B+Dohertys+Road,+Truganina+VIC+3029" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Unit 4/483B Dohertys Rd, Truganina VIC 3029</a>
                     </div>
                     <a href="{{ route('contact') }}" class="sf-nav-cta">GET A FREE QUOTE</a>
                 </li>

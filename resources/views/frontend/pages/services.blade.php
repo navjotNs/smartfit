@@ -75,7 +75,7 @@
 
         <article class="sf-svc-block reveal" id="vanities">
             <div class="sf-svc-block__media">
-                <img src="{!! asset('uploads/images/860430bath_15.webp') !!}" alt="Custom bathroom vanities">
+                <img src="{!! asset('uploads/images/van.jpeg') !!}" alt="Custom bathroom vanities">
             </div>
             <div class="sf-svc-block__copy">
                 <h2>Vanities</h2>
@@ -113,7 +113,7 @@
 
         <article class="sf-svc-block reveal" id="entertainment">
             <div class="sf-svc-block__media">
-                <img src="{!! asset('uploads/images/941639entertain_05.webp') !!}" alt="Entertainment unit joinery">
+                <img src="{!! asset('uploads/images/enter.jpeg') !!}" alt="Entertainment unit joinery">
             </div>
             <div class="sf-svc-block__copy">
                 <h2>Entertainment units</h2>
