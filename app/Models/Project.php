@@ -11,7 +11,7 @@ class Project extends Model
     protected $table = 'projects';
    
     protected $fillable = [
-        'title', 'status', 'url', 'description', 'sort_order', 'image', 'banner', 'meta_description', 'created_at', 'updated_at', 'deleted_at'
+        'title', 'status', 'url', 'description', 'sort_order', 'image', 'banner', 'gallery1', 'gallery2', 'gallery3', 'gallery4', 'meta_description', 'created_at', 'updated_at', 'deleted_at'
     ];
 
     public function validate($inputs, $id = null){

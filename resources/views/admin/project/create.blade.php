@@ -102,6 +102,79 @@ bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
                                         @endif
                                     </div> 
 
+                                    <div class="col-md-3" style="margin-top: 20px;">
+                                        <div class="form-group"> 
+                                            <label>Gallery 1</label> 
+                                            @if(!empty($result->gallery1))
+                                            {!! Form::file('gallery1', array()) !!}
+                                            @else
+                                            {!! Form::file('gallery1', array('required' => 'true')) !!}
+                                            @endif
+                                            @if($errors->has('gallery1'))
+                                             <span class="text-danger">{{$errors->first('gallery1')}}</span>
+                                            @endif
+                                        </div>
+                                        @if(!empty($result->gallery1))
+                                            <div class="form-group"> 
+                                                 {!! HTML::image(asset($result->gallery1),'' ,array('width' => 150 , 'class'=>'img-responsive') ) !!}
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="col-md-3" style="margin-top: 20px;">
+                                        <div class="form-group"> 
+                                            <label>Gallery 2</label> 
+                                            @if(!empty($result->gallery2))
+                                            {!! Form::file('gallery2', array()) !!}
+                                            @else
+                                            {!! Form::file('gallery2', array('required' => 'true')) !!}
+                                            @endif
+                                            @if($errors->has('gallery2'))
+                                             <span class="text-danger">{{$errors->first('gallery2')}}</span>
+                                            @endif
+                                        </div>
+                                        @if(!empty($result->gallery2))
+                                            <div class="form-group"> 
+                                                 {!! HTML::image(asset($result->gallery2),'' ,array('width' => 150 , 'class'=>'img-responsive') ) !!}
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="col-md-3" style="margin-top: 20px;">
+                                        <div class="form-group"> 
+                                            <label>Gallery 3</label> 
+                                            @if(!empty($result->gallery3))
+                                            {!! Form::file('gallery3', array()) !!}
+                                            @else
+                                            {!! Form::file('gallery3', array('required' => 'true')) !!}
+                                            @endif
+                                            @if($errors->has('gallery3'))
+                                             <span class="text-danger">{{$errors->first('gallery3')}}</span>
+                                            @endif
+                                        </div>
+                                        @if(!empty($result->gallery3))
+                                            <div class="form-group"> 
+                                                 {!! HTML::image(asset($result->gallery3),'' ,array('width' => 150 , 'class'=>'img-responsive') ) !!}
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="col-md-3" style="margin-top: 20px;">
+                                        <div class="form-group"> 
+                                            <label>Gallery 4</label> 
+                                            @if(!empty($result->gallery4))
+                                            {!! Form::file('gallery4', array()) !!}
+                                            @else
+                                            {!! Form::file('gallery4', array('required' => 'true')) !!}
+                                            @endif
+                                            @if($errors->has('gallery4'))
+                                             <span class="text-danger">{{$errors->first('gallery4')}}</span>
+                                            @endif
+                                        </div>
+                                        @if(!empty($result->gallery4))
+                                            <div class="form-group"> 
+                                                 {!! HTML::image(asset($result->gallery4),'' ,array('width' => 150 , 'class'=>'img-responsive') ) !!}
+                                            </div>
+                                        @endif
+                                    </div>
+
 
                                     </div>
                                     

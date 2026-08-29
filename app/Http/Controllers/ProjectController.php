@@ -73,6 +73,83 @@ class ProjectController extends Controller{
             unset($inputs['banner']);
             $inputs['banner'] = $image;
 
+            if(isset($inputs['gallery1']) or !empty($inputs['gallery1'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery1'))  {
+                    $file = $request->file('gallery1') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = null;
+            }
+            unset($inputs['gallery1']);
+            $inputs['gallery1'] = $image;
+
+            if(isset($inputs['gallery2']) or !empty($inputs['gallery2'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery2'))  {
+                    $file = $request->file('gallery2') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = null;
+            }
+            unset($inputs['gallery2']);
+            $inputs['gallery2'] = $image;
+
+            if(isset($inputs['gallery3']) or !empty($inputs['gallery3'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery3'))  {
+                    $file = $request->file('gallery3') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = null;
+            }
+            unset($inputs['gallery3']);
+            $inputs['gallery3'] = $image;
+
+            if(isset($inputs['gallery4']) or !empty($inputs['gallery4'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery4'))  {
+                    $file = $request->file('gallery4') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = null;
+            }
+            unset($inputs['gallery4']);
+            $inputs['gallery4'] = $image;
+
+
             $inputs = $inputs + [
                     'created_by' => Auth::id(),
                     'url' =>  $slug_name,
@@ -136,7 +213,81 @@ class ProjectController extends Controller{
             unset($inputs['banner']);
             $inputs['banner'] = $image;
 
+            if(isset($inputs['gallery1']) or !empty($inputs['gallery1'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery1'))  {
+                    $file = $request->file('gallery1') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = $result->gallery1;
+            }
+            unset($inputs['gallery1']);
+            $inputs['gallery1'] = $image;
 
+            if(isset($inputs['gallery2']) or !empty($inputs['gallery2'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery2'))  {
+                    $file = $request->file('gallery2') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = $result->gallery2;
+            }
+            unset($inputs['gallery2']);
+            $inputs['gallery2'] = $image;
+
+            if(isset($inputs['gallery3']) or !empty($inputs['gallery3'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery3'))  {
+                    $file = $request->file('gallery3') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = $result->gallery3;
+            }
+            unset($inputs['gallery3']);
+            $inputs['gallery3'] = $image;
+
+            if(isset($inputs['gallery4']) or !empty($inputs['gallery4'])) {
+                $image_name = rand(100000, 999999);
+                $fileName = '';
+                if($file = $request->hasFile('gallery4'))  {
+                    $file = $request->file('gallery4') ;
+                    $img_name = $file->getClientOriginalName();
+                    $fileName = $image_name.$img_name;
+                    $destinationPath = public_path().'/uploads/images/' ;
+                    $file->move($destinationPath, $fileName);
+                }
+                $fname ='/uploads/images/';
+                $image = $fname.$fileName;
+            }
+            else{
+                $image = $result->gallery4;
+            }
+            unset($inputs['gallery4']);
+            $inputs['gallery4'] = $image;
 
             $inputs = $inputs + [
                 'updated_by' => Auth::id(),

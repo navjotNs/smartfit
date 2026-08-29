@@ -86,7 +86,7 @@ class HomeController extends Controller{
     
     public function projectDetails($url = null){
         try{
-            $article = Project::where('status', 1)->where('url', $url)->select('id', 'title', 'description', 'image', 'meta_description', 'url')->first();
+            $article = Project::where('status', 1)->where('url', $url)->select('id', 'title', 'description', 'image', 'gallery1', 'gallery2', 'gallery3', 'gallery4', 'meta_description', 'url')->first();
             if (!$article) {
                 return back();
             }

@@ -60,6 +60,18 @@
             <div class="sf-project-copy">
                 {!! $storyHtml !!}
             </div>
+            <div class="image-gallery">
+                <img src="{!! asset($article->gallery1) !!}">
+            </div>
+            <div class="image-gallery">
+                <img src="{!! asset($article->gallery2) !!}">
+            </div>
+            <div class="image-gallery">
+                <img src="{!! asset($article->gallery3) !!}">
+            </div>
+            <div class="image-gallery">
+                <img src="{!! asset($article->gallery4) !!}">
+            </div>
             <a href="{{ route('contact') }}" class="sf-btn sf-btn--champagne">Enquire about a similar project</a>
         </div>
     </section>
